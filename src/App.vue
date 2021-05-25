@@ -2,7 +2,7 @@
   <div id="app">
      <header-nav/>
     
-      <particles-bg type="ball" :color="white" :bg="true" />
+      <!-- <particles-bg type="ball" :color="white" :bg="true" /> -->
      <router-view></router-view>
   </div>
 </template>

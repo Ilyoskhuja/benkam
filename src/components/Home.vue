@@ -1,25 +1,24 @@
 <template>
 <div>
-     <!-- <vue-particles
+     <vue-particles
         color="#f7f7f7"
-        :particleOpacity="90.7"
-        :particlesNumber="8"
-        shapeType="triangle"
+        :particleOpacity="0.7"
+        :particlesNumber="15"
+        shapeType="none"
         :particleSize="4"
         linesColor="#000000"
         :linesWidth="1"
         :lineLinked="true"
-        :lineOpacity="0.2"
-        :linesDistance="650"
+        :lineOpacity="0.4"
+        :linesDistance="300"
         :moveSpeed="3"
         :hoverEffect="false"
         hoverMode="grab"
         :clickEffect="false"
         clickMode="push"
-        style="position:an z-index:-15"
       >
       
-      </vue-particles> -->
+      </vue-particles>
    <a-row class="secone">
       <a-col :span="12" :offset="6">
       <div class="mainImage">
@@ -83,7 +82,7 @@
      </a-col>
      
     </a-row>
-     <a-row class="secthr" type="flex" justify="space-between" >
+    <a-row class="secthr" type="flex" justify="space-between" >
      <a-col :span="22" :offset="2">
        <div class="thrtitle">
        <span class="lineGrey"></span>
@@ -111,7 +110,7 @@
      </a-col>
      
     </a-row>
-    <a-row style="margin-top:5rem" type="flex" justify="space-around">
+ <a-row style="margin-top:5rem" type="flex" justify="space-around">
       <a-col :span="22" :offset="2">
        <div class="thrtitle">
        <span class="lineGrey"></span>
@@ -144,7 +143,7 @@
       </a-col>
      </a-row>
 
-       <a-row style="margin-top:5rem" type="flex" justify="space-around">
+        <a-row style="margin-top:5rem" type="flex" justify="space-around">
       <a-col :span="22" :offset="2">
        <div class="thrtitle">
        <span class="lineGrey"></span>
@@ -186,7 +185,7 @@
  
      
     </a-row>
-    <a-row>
+   <a-row>
       <a-col :span="12" :offset="2">
       <h1 class="geoTitle">Рассчитайте точный срок доставки</h1>
       <h4 class="geoInfo">Узнайте точные сроки доставки до вашего города или центрального склада с ресурсами нашего отдела логистики и собственным автопарком.</h4>
@@ -254,7 +253,7 @@
         </a-col> 
         
     </a-row>
-    <a-row style="margin-top:5rem" type="flex" justify="space-around">
+   <a-row style="margin-top:5rem" type="flex" justify="space-around">
       <a-col class="mt-5 mb-5" :span="22" :offset="2">
        <div class="thrtitle">
        <span class="lineGrey"></span>
@@ -284,16 +283,17 @@
        </ul>
 
        <h1 class="contactMain">BENKAM в Европе</h1>
+       <ul>
         <li>ул. Галинес 1, Вильнюс, Литва 14247
                 Регистрационный номер: 304590804 <br>
                             ИНН: LT100011262117</li>
          <li>+370 67 608 303</li>
          <li>Email: a.yokubov@benkam.be</li>
-
+       </ul>
       </a-col>
    
     </a-row>
-     <a-row style="margin-top:5rem" type="flex" justify="space-around">
+    <a-row style="margin-top:5rem" type="flex" justify="space-around">
       <a-col class="mt-5 mb-5" :span="22" :offset="2">
        <div class="thrtitle">
        <span class="lineGrey"></span>
@@ -312,57 +312,110 @@
      
      </a-col>
      <a-col :span="8">
-       <img src="../assets/img/akzo.png">
+       <img width="100%" src="../assets/img/akzo.png">
       </a-col>
    
     </a-row>
       <a-row style="margin-top:5rem" type="flex" justify="space-around">
      
-     <a-col :span="12">
-      <h1 class="partnerTitle">Заполните форму обратной <br> связи и мы оперативно <br>свяжемся с вами !</h1>
-       <span>Поля отмеченные (*) оязательные для заполнения !</span>
-      <a-row>
-        <a-col :span="12">
+     <a-col :span="10" :offset="2">
+      <h1 class="connectform">Заполните форму обратной <br> связи и мы оперативно <br>свяжемся с вами !</h1>
+       <span class="requiredInfo">Поля отмеченные (*) оязательные для заполнения !</span>
+      <a-row style="margin-top:55px">
+        <a-col :span="12" class="mt-3">
         <input placeholder="Ваше Имя" />
         </a-col>
-        <a-col :span="12">
+        <a-col :span="12" class="mt-3">
           <input placeholder="Ваша Фамилия">
         </a-col>
-        <a-col :span="12">
+        <a-col :span="12" class="mt-3">
           <input placeholder="Номер тел.:  + 998 (__) ___ __ __">
         </a-col>
-        <a-col :span="12">
+        <a-col :span="12" class="mt-3">
           <input placeholder="E-mail (электронная почта)">
         </a-col>
-        <a-col :span="12">
-          <textarea name="text" placeholder="Комментарий к заявке " id="" cols="30" rows="10"></textarea>
+        <a-col :span="24" class="mt-3">
+          <textarea name="text" placeholder="Комментарий к заявке " id="" cols="60" rows="5"></textarea>
         </a-col>
-        <a-col :span="12">
-          <h1>Я согласен на обработку персональных данных</h1>
+        <a-col :span="12" class="mt-3">
+          <h1 class="requiredConfirm">Я согласен на обработку персональных данных</h1>
         </a-col>
         <a-col>
-          <button>Заказать звонок</button>
+          <button  class="callButton mt-3">Заказать звонок</button>
         </a-col>
       </a-row>
-     
+  
      </a-col>
      <a-col :span="12">
      <a-row>
-       <div class="partnerMain">
-         <h1>Benkam</h1>
+       <div class="reqInfo">
+         <div class="reqInfoTitle">
+          <span class="requiredMiniInfo">Страна, город доставки :</span>
+         <h1 class="reqminiTitle">BENKAM в России</h1>
+         </div>
          <input placeholder="select">
        </div>
-       <img src="../assets/img/map.png">
-       <h3>ООО “БЕНКАМ РУС” Отдел продаж и склад</h3>
-       <h4>Россия, г. Химки, ул. Рабочая 2А, корпус 22 А. Офис 206В</h4>
+        <a-divider />
+       <img width="100%" src="../assets/img/map.png">
+       <h3 class="contactMain">ООО “БЕНКАМ РУС” Отдел продаж и склад</h3>
+       <ul class="reqContact">
+       <li>Россия, г. Химки, ул. Рабочая 2А, корпус 22 А. Офис 206В</li>
        
-       <h4>+7 (967) 034-00-07 +7 (495) 795-74-84</h4>
+       <li>+7 (967) 034-00-07 +7 (495) 795-74-84</li>
        
-       <h4>info@benkam.ru sales@benkam.ru</h4>
+       <li>info@benkam.ru sales@benkam.ru</li>
+       </ul>
      </a-row>
      </a-col>
    
     </a-row>
+    <a-row class="mt-5">
+      <a-col :span='8' :offset='1'>
+        <div style="text-align:left">
+        <img class="mb-5" src="../assets/img/footerlogo.png">
+        <span class="footerInfo">Компания Avant Metal Group зарекомендовала себя как надежного и ответственного производителя, в продукции которого вы можете быть уверены. </span>
+        </div>
+      </a-col>
+      <a-col :span='4' :offset='3'>
+        <span>О нас</span>
+        <ul>
+          <li>Миссия и видение</li>
+          <li>Профиль компании</li>
+          <li>Политика IMS</li>
+        </ul>   
+      </a-col>
+       <a-col :span='4' :offset='3'>
+        <span>База знаний</span>
+        <ul>
+          <li>Почему алюминий</li>
+          <li>Сплавы</li>
+          <li>Лабороторные испытания</li>
+          <li>Области применения</li>
+        </ul>   
+      </a-col>
+      <a-col :span='4' :offset='18'>
+       <span>Услуги</span>
+        <ul>
+          <li>Экструзия</li>
+          <li>Андонирование</li>
+          <li>Покраска</li>
+          <li>Упаковка и логистика</li>
+        </ul>   
+      </a-col>
+       <a-col :span='4' :offset='3'>
+     
+        <ul>
+          <li>Карьера</li>
+          <li>Новости</li>
+          <li>Контакты</li>
+         </ul>   
+      </a-col>
+      <a-col :span='24' style="display:flex; justify-content:space-around">
+        <span> © 2017 Benkam alu extrusions. Все права защищены. </span>
+        <span>Benkam в социальных сетях :</span>
+         
+      </a-col>
+    </a-row> -->
 </div>
 </template>
 
@@ -377,9 +430,148 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  z-index: -1;
+}
+.footerInfo{
+  max-width: 528px;
+height: 72px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+letter-spacing: 2px;
+
+/* Benkam (text) */
+
+color: #282828;
+
+}
+.reqContact li {
+  text-align: left;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+letter-spacing: 2px;
+
+/* Benkam (text) */
+
+color: #282828;
+}
+.reqminiTitle{
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+
+letter-spacing: 0.05em;
+
+/* Benkam (text) */
+
+color: #282828;
+}
+.reqInfoTitle{
+  text-align: left;
+}
+.requiredMiniInfo{
+  font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.05em;
+
+color: #C1C1C1;
+
+}
+.callButton{
+  max-width: 368px;
+height: 64px;
+font-family: Styrene A LC;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+
+/* _Text */
+
+color: #FBFBFB;
+/* Benkam (text) green */
+
+background: #18B025;
+}
+.requiredConfirm{
+  text-align: left;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.05em;
+
+/* Benkam (teht) gray */
+
+color: #656565;}
+.requiredInfo{
+  text-align: left;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.05em;
+
+/* Benkam (teht) gray */
+
+color: #656565;
+margin-top: 5rem;
+margin-bottom: 15rem;
+}
+.connectform{
+  text-align: left;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+/* or 100% */
+
+letter-spacing: 0.05em;
+
+/* Benkam (text) green */
+
+color: #18B025;
+}
 .partnerMain{
   display: flex;
   justify-content: space-around;
+}
+.reqInfo{
+  display: flex;
+  justify-content: space-between;
 }
 .partnerTitle{
   display: flex;
@@ -785,7 +977,7 @@ color: #282828;
 }
 .sec6Title{
   /* position: absolute; */
-width: 1200px;
+max-width: 1200px;
 height: 96px;
 
 
