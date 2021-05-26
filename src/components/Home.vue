@@ -43,13 +43,13 @@
       </a-col>
     </a-row>
     <a-row class="secthr">
-      <a-col :span="24">
+      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 24 }" :lg="{ span: 4, offset: 2 }">
         <div class="thrtitle">
           <span class="lineGrey"></span>
           <span class="miniTitle">Производственная мощность</span>
         </div>
       </a-col>
-      <a-col :span="4" :offset="2">
+      <a-col :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 6, offset: 4 }" :lg="{ span: 4, offset: 2 }">
         <div class="secInfotwo">
           <h1 class="miniTitleone">1000</h1>
           <h4 class="miniTitlesec">тонн</h4>
@@ -57,7 +57,7 @@
         </div>
       </a-col>
 
-      <a-col :span="4" :offset="2">
+      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 8, offset: 4 }" :lg="{ span: 4, offset: 2 }">
         <div class="secInfotwo">
           <h1 class="miniTitleone">3</h1>
           <h4 class="miniTitlesec">новейших пресса</h4>
@@ -67,7 +67,7 @@
         </div>
       </a-col>
 
-      <a-col :span="4" :offset="2">
+      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 6, offset: 4 }" :lg="{ span: 4, offset: 2 }">
         <div class="secInfotwo">
           <h1 class="miniTitleone">28</h1>
           <h4 class="miniTitlesec">тысяч тонн в год</h4>
@@ -77,7 +77,7 @@
         </div>
       </a-col>
 
-      <a-col :span="4" :offset="2">
+      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 8, offset: 4 }" :lg="{ span: 4, offset: 2 }">
         <div class="secInfotwo">
           <h1 class="miniTitleone">36</h1>
           <h4 class="miniTitlesec">тысяч тонн в год</h4>
@@ -85,7 +85,7 @@
         </div>
       </a-col>
     </a-row>
-    <a-row class="secthr" type="flex" justify="space-between">
+    <!-- <a-row class="secthr" type="flex" justify="space-between">
       <a-col :span="24">
         <div class="thrtitle">
           <span class="lineGrey"></span>
@@ -149,8 +149,13 @@
       </a-col>
     </a-row>
     <a-row class="sec6">
-      <a-col :span="16" :offset="4">
+    
+      <a-col :span="24" >
+          <div style="position:absolute">
+            <img width="100%" src="../assets/img/6.png" />
+          </div>
         <div class="sec6Box">
+         
           <h1 class="sec6Title">Инновационность</h1>
           <h6 class="sec6Info">
             Непрерывное внедрение новшеств, обеспечивающих повышение
@@ -159,6 +164,7 @@
           </h6>
         </div>
       </a-col>
+
     </a-row>
 
     <a-row class="mt-5" type="flex" justify="space-around">
@@ -342,13 +348,14 @@
       </a-col>
       <a-col :span="18">
         <div class="row">
-          <div class="col-md-6" style="height: 480px;">
+          <div class="col-md-6" style="height: 480px; display:flex;justify-content:center;">
           <h1 class="partnerTitle">
-            Каждый партнер - <br />это ценность для <br />нас.
+            Каждый партнер - это ценность для <br />нас.
           </h1>
           </div>
-          <div class="col-md-6" style="height: 480px;background: #404040; "> 
+          <div class="col-md-6" > 
           <img style="margin:10rem 0;"  src="../assets/img/eco.png" />
+          <!- <div style="position:relative;height: 480px;background: #404040;opacity: 0.03;    z-index:1; "></div> ->
           </div>
         </div>
         <div class="row">  
@@ -431,9 +438,58 @@ height: 480px;background: #FFFFFF;">
           </ul>
         </a-row>
       </a-col>
-    </a-row>
-    <a-row class="mt-5 footer">
-      <a-col class="mt-5 mb-5" :span="8" :offset="1">
+    </a-row> -->
+    <!-- <a-row>
+     <div class=" footer" >
+     
+      <div class="item1 footerLogo">
+          <img  src="../assets/img/footerlogo.png" />
+          <span class="footerlogoText"
+            >Компания Avant Metal Group зарекомендовала себя как надежного и
+            ответственного производителя, в продукции которого вы можете быть
+            уверены.
+          </span>
+        </div>
+        <div class="item2">
+        <span>О нас</span>
+        <ul>
+          <li>Миссия и видение</li>
+          <li>Профиль компании</li>
+          <li>Политика IMS</li>
+        </ul>
+        <div class="miniInfo">
+        <span >База знаний</span>
+        <ul>
+          <li>Почему алюминий</li>
+          <li>Сплавы</li>
+          <li>Лабороторные испытания</li>
+          <li>Области применения</li>
+        </ul>
+        </div>
+     </div>
+      <div class="item3">
+        <span>Услуги</span>
+        <ul>
+          <li>Экструзия</li>
+          <li>Андонирование</li>
+          <li>Покраска</li>
+          <li>Упаковка и логистика</li>
+        </ul>
+        <ul class="miniInfo">
+          <li>Карьера</li>
+          <li>Новости</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+      <div class="item4">
+        <span> © 2017 Benkam alu extrusions. Все права защищены. </span>
+        <span>Benkam в социальных сетях :</span> 
+      </div>
+    </div>
+    </a-row> -->
+    <!-- <a-row class=" footer">
+      
+      <a-col class="mt-5 mb-5" :span="12" :offset="1">
         <div style="text-align: left">
           <img class="mb-5" src="../assets/img/footerlogo.png" />
           <span class="footerInfo"
@@ -480,8 +536,8 @@ height: 480px;background: #FFFFFF;">
         <span> © 2017 Benkam alu extrusions. Все права защищены. </span>
         <span>Benkam в социальных сетях :</span>
       </a-col>
-    </a-row>
-    -->
+    </a-row> -->
+    
   </div>
 </template>
 
@@ -496,8 +552,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.item1 { grid-area: logo; }
+.item2 { grid-area: one; }
+.item3 { grid-area: two; }
+.item4 { grid-area: footer; 
+ display: flex;
+ justify-content: left;
+}
+.miniInfo{
+  margin-top: 105px;
+}
+ul {
+  list-style-type: none;
+}
+.footerlogoText{
+  text-align: left;
+  /* margin-top:25px; */
+}
+.footerLogo{
+  display: grid;
+  justify-self:left;
+  max-width: 500px;
+}
 .geoBox {
   height: 272px;
+  margin: 50px 0;
   background: #d8f4da;
   box-shadow: 0px 0px 104px rgba(0, 0, 0, 0.15);
 }
@@ -514,7 +593,16 @@ export default {
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .footer {
+  padding: 150px 0;
   background-color: #fafafa;
+display: grid;
+  grid-template-areas:
+    
+    'logo  logo one  one two two'
+    'footer footer footer footer footer footer';
+  grid-template-rows:300px;  
+  grid-gap: 10px;
+  padding: 100px 45px;
 }
 #particles-js {
   height: 100%;
@@ -659,6 +747,7 @@ export default {
   justify-content: space-between;
 }
 .partnerTitle {
+  max-width: 300px;
   display: flex;
   justify-content: left;
   font-family: Inter;
@@ -667,7 +756,7 @@ export default {
   font-size: 32px;
   line-height: 48px;
   /* or 150% */
-
+ margin-top:10rem;
   letter-spacing: 0.05em;
 
   /* Benkam (text) */
@@ -820,10 +909,10 @@ export default {
 .secone {
   height: 80vh;
 }
-.secthr {
-  /* margin-top: 10rem; */
+/* .secthr {
+  /* margin-top: 10rem; /
   height: 120vh;
-}
+} */
 .mainImage {
   margin-top: 20vh;
   text-align: left;
@@ -1066,12 +1155,16 @@ p {
 .sec6 {
   height: 100vh;
   margin-top: 10rem;
-  background-image: url("../assets/img/6.png");
+  /* background-image: url("../assets/img/6.png"); */
+  position: relative;
 }
 .sec6Box {
+  position: absolute;
   text-align: left;
   margin-top: 10rem;
+  margin-left: 10rem ;
   width: 40vw;
+  z-index: 1;
 }
 .sec6Title {
   /* position: absolute; */
@@ -1350,4 +1443,66 @@ p {
   max-width: 400px;
   height: 208px;
 }
+@media screen and (max-width: 375px)  {
+  .thrtitle{
+    display:grid;
+      height: 120px;
+  }
+  .lineGrey{
+    position:absolute;
+    margin-left: 5rem;
+    margin-top:6.5rem;
+  }
+  .greenInfo{
+     width: 65vw;
+  height: 35vh;
+  }
+  .info{
+      font-size: 16px;
+       line-height: 22px;
+
+  letter-spacing: 0.015em;
+  width: 55vw;
+
+  }
+  .mainLogo {
+  width: 57vw;
+  height: 15vh;
+  }
+  .secInfotwo{
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 768px)  {
+  .thrtitle{
+    display:grid;
+      height: 120px;
+      max-width: 350px;
+  }
+  .lineGrey{
+    position:absolute;
+    margin-left: 5rem;
+    margin-top:6.5rem;
+  }
+  .greenInfo{
+     width: 65vw;
+     height: 19vh;
+  }
+  .info{
+      font-size: 26px;
+       line-height: 22px;
+
+  letter-spacing: 0.015em;
+  width: 60vw;
+
+  }
+  .mainLogo {
+  width: 57vw;
+  height: 15vh;
+  }
+  .secInfotwo{
+    margin-top: 5rem;
+  }
+}
+
 </style>
