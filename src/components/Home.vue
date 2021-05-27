@@ -43,7 +43,7 @@
       </a-col>
     </a-row>
     <a-row class="secthr">
-      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 24 }" :lg="{ span: 4, offset: 2 }">
+      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 24 }" :lg="{ span: 24}">
         <div class="thrtitle">
           <span class="lineGrey"></span>
           <span class="miniTitle">Производственная мощность</span>
