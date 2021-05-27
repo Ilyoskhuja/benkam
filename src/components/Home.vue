@@ -14,7 +14,7 @@
       :moveSpeed="3"
       :hoverEffect="true"
       hoverMode="grab"
-      :clickEffect="false"
+      :clickEffect="true"
       clickMode="push"
     >
     </vue-particles>
@@ -43,13 +43,23 @@
       </a-col>
     </a-row>
     <a-row class="secthr">
-      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 24 }" :lg="{ span: 24}">
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 24 }"
+        :lg="{ span: 24 }"
+      >
         <div class="thrtitle">
           <span class="lineGrey"></span>
           <span class="miniTitle">Производственная мощность</span>
         </div>
       </a-col>
-      <a-col :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 6, offset: 4 }" :lg="{ span: 4, offset: 2 }">
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 6, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }"
+      >
         <div class="secInfotwo">
           <h1 class="miniTitleone">1000</h1>
           <h4 class="miniTitlesec">тонн</h4>
@@ -57,7 +67,12 @@
         </div>
       </a-col>
 
-      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 8, offset: 4 }" :lg="{ span: 4, offset: 2 }">
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 8, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }"
+      >
         <div class="secInfotwo">
           <h1 class="miniTitleone">3</h1>
           <h4 class="miniTitlesec">новейших пресса</h4>
@@ -67,7 +82,12 @@
         </div>
       </a-col>
 
-      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 6, offset: 4 }" :lg="{ span: 4, offset: 2 }">
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 6, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }"
+      >
         <div class="secInfotwo">
           <h1 class="miniTitleone">28</h1>
           <h4 class="miniTitlesec">тысяч тонн в год</h4>
@@ -77,7 +97,12 @@
         </div>
       </a-col>
 
-      <a-col  :xs="{ span: 24 }" :sm="{ span: 24}" :md="{ span: 8, offset: 4 }" :lg="{ span: 4, offset: 2 }">
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 8, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }"
+      >
         <div class="secInfotwo">
           <h1 class="miniTitleone">36</h1>
           <h4 class="miniTitlesec">тысяч тонн в год</h4>
@@ -85,53 +110,98 @@
         </div>
       </a-col>
     </a-row>
-    <!-- <a-row class="secthr" type="flex" justify="space-between">
+    <a-row type="flex">
       <a-col :span="24">
         <div class="thrtitle">
           <span class="lineGrey"></span>
           <span class="miniTitle2">Наши услуги</span>
         </div>
       </a-col>
-      <a-col :span="1" :offset="0">
-        <img class="waterImg" src="../assets/img/water.png" />
-      </a-col>
-
-      <a-col :span="4" :offset="1">
+      <a-col :span='24'>
+      
+           <a-carousel :after-change="onChange">
+        <div> 
+            <a-row>
+          <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 24}"
+        :lg="{ span: 4, offset: 8 }">
         <h1 class="waterTitle">Анодирование</h1>
         <h1 class="waterInfo">
           Для чего необходим <br />
           процесс анодирования?
         </h1>
         <p class="waterMore">Подробнее</p>
+          <div class="waterImg">
+        <img  src="../assets/img/water2.png" />
+        </div>
       </a-col>
 
-      <a-col :span="14">
-        <img class="waterImg" src="../assets/img/water2.png" />
-      </a-col>
-      <a-col :span="14" :offset="10">
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 20, offset: 2 }"
+        :lg="{ span: 20, offset: 12 }" >
         <h1 class="waterUnderImg">
           Наши экструзионные линии могут производить профили до 7,5 метров в
           автоматическом режиме. Экструдируемый вес профилей составляет от 50 до
           15 кг на метр.
         </h1>
       </a-col>
+        </a-row>
+        </div>
+        <div> <a-row>
+          <a-col :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 24  }"
+        :lg="{ span: 4, offset: 8 }">
+        <h1 class="waterTitle">Анодирование</h1>
+        <h1 class="waterInfo">
+          Для чего необходим <br />
+          процесс анодирования?
+        </h1>
+        <p class="waterMore">Подробнее</p>
+          <div class="waterImg">
+        <img  src="../assets/img/roof.png" />
+        </div>
+      </a-col>
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 20, offset: 2 }"
+        :lg="{ span: 20, offset: 12 }" >
+        <h1 class="waterUnderImg">
+          Наши экструзионные линии могут производить профили до 7,5 метров в
+          автоматическом режиме. Экструдируемый вес профилей составляет от 50 до
+          15 кг на метр.
+        </h1>
+      </a-col>
+        </a-row></div>
+
+      </a-carousel>
+      </a-col>
+
     </a-row>
-    <a-row class="mt-5" type="flex" justify="space-around">
+     <a-row  type="flex" >
       <a-col :span="24">
         <div class="thrtitleNoneBackg">
           <span class="lineGrey"></span>
           <span class="miniTitleMission">Миссия и видение</span>
         </div>
       </a-col>
-      <a-col :span="5" :offset="4">
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 18, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }">
         <h1 class="fiveMaint">Молодое – значит оценивающее <br />по-новому.</h1>
         <h4 class="fiveMainb">
           Анализируя мировой рынок, мы стремимся идти в ногу со временем
           предлагая самые выгодные условия для наших клиентов.
         </h4>
       </a-col>
-      <a-col :span="3" :offset="1"
-        >.
+      <a-col :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 4, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }"
+        >
 
         <span class="line65"></span>
         <h5 class="fiveMainc">
@@ -140,20 +210,23 @@
           инновационные проекты. Нам важен успех наших клиентов !
         </h5>
       </a-col>
-      <a-col :span="6" :offset="0">
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 4, offset: 4 }"
+        :lg="{ span: 4, offset: 2 }">
         <span class="line65"></span>
         <h5 class="fiveMainc">
           Создание инновационных и комплексных решений, отвечающих потребностям
           рынка. Внедрение качественной продукции на рынок.
         </h5>
       </a-col>
-    </a-row>
-    <a-row class="sec6">
+    </a-row> 
+    <a-row >
     
-      <a-col :span="24" >
-          <div style="position:absolute">
-            <img width="100%" src="../assets/img/6.png" />
-          </div>
+      <a-col :span="24" class="sec6" >
+        <div class="sec6Img">
+        <img width="100%" height="100%"   src="../assets/img/6.png" />
+        </div>
         <div class="sec6Box">
          
           <h1 class="sec6Title">Инновационность</h1>
@@ -167,22 +240,28 @@
 
     </a-row>
 
-    <a-row class="mt-5" type="flex" justify="space-around">
+    <a-row class="mt-5" type="flex" >
       <a-col :span="24">
         <div class="thrtitleD8">
           <span class="lineGrey"></span>
           <span class="miniTitleMission">Коротко о нас</span>
         </div>
       </a-col>
-      <a-col :span="7" :offset="2">
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 18, offset: 4 }"
+        :lg="{ span: 7, offset: 2 }">
         <h1 class="aboutMaint">
           Благодаря опыту наших с пециалистов из Европы и неординарному подходу
           к работе, каждый наш клиент может рассчитывать на техническую помощь и
           поддержку в разработке профилей.
         </h1>
       </a-col>
-      <a-col :span="3" :offset="1"
-        >.
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 18, offset: 4 }"
+        :lg="{ span: 3, offset: 1 }"
+        >
 
         <span class="line65"></span>
         <h5 class="aboutMainc">
@@ -195,30 +274,74 @@
     </a-row>
     <a-row class="secthr" type="flex" justify="space-between">
       <a-col :span="24">
-        <div class="thrtitleNoneBackg">
+           <div class="thrtitleNoneBackg">
           <span class="lineGrey"></span>
           <span class="miniTitle2">применение</span>
         </div>
       </a-col>
-      <a-col :span="2" :offset="0">
-        <img class="waterImg" src="../assets/img/man.png" />
+      <a-col :span="24">
+              <a-carousel :after-change="onChange">
+        <div> 
+            <a-row>
+          <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 24}"
+        :lg="{ span: 4, offset: 8 }">
+        <h1 class="waterTitle">Анодирование</h1>
+        <h1 class="waterInfo">
+          Для чего необходим <br />
+          процесс анодирования?
+        </h1>
+        <p class="waterMore">Подробнее</p>
+          <div class="waterImg">
+        <img  src="../assets/img/car.png" />
+        </div>
       </a-col>
 
-      <a-col :span="4" :offset="1">
-        <h1 class="appTitle">Транспорт</h1>
-        <h1 class="appInfo">
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 20, offset: 2 }"
+        :lg="{ span: 20, offset: 12 }" >
+        <h1 class="waterUnderImg">
           Современные города невозможно представить без алюминия. Из него
           возводятся пешеходные, фасадные, оконные и раздвижные системы,
           опалубки и строительные леса.
         </h1>
+      </a-col>
+        </a-row>
+        </div>
+        <div> <a-row>
+          <a-col :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 24  }"
+        :lg="{ span: 4, offset: 8 }">
+        <h1 class="waterTitle">Анодирование</h1>
+        <h1 class="waterInfo">
+          Для чего необходим <br />
+          процесс анодирования?
+        </h1>
         <p class="waterMore">Подробнее</p>
+          <div class="waterImg">
+        <img  src="../assets/img/man.png" />
+        </div>
       </a-col>
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 20, offset: 2 }"
+        :lg="{ span: 20, offset: 12 }" >
+        <h1 class="waterUnderImg">
+          Наши экструзионные линии могут производить профили до 7,5 метров в
+          автоматическом режиме. Экструдируемый вес профилей составляет от 50 до
+          15 кг на метр.
+        </h1>
+      </a-col>
+        </a-row></div>
 
-      <a-col :span="14">
-        <img class="waterImg" src="../assets/img/car.png" />
+      </a-carousel>
+     
       </a-col>
-    </a-row>
-    <a-row class="secthr">
+     </a-row>
+    <!-- <a-row class="secthr">
       <a-col :span="24" class="geoBox">
         <div class="geoBoxDec">
           <h1 class="geoTitle">Рассчитайте точный срок доставки</h1>
@@ -286,7 +409,7 @@
           <img class="geoMap3" src="../assets/img/uzbekistan.png" />
         </div>
       </a-col>
-    </a-row>
+    </a-row> -->
     <a-row class="secthr" >
       <a-col :span="24">
         <div class="thrtitleNoneBackg">
@@ -294,7 +417,11 @@
           <span class="miniTitleMission">Наши контакты</span>
         </div>
       </a-col>
-      <a-col class="mt-5" :span="6" :offset='2'>
+      <a-row>
+      <a-col :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 8, offset: 2 }"
+        :lg="{ span: 10, offset: 2 }">
         <h1 class="contactMain">Головной офис</h1>
         <ul class="contactInfoAlign">
           <li>
@@ -311,23 +438,13 @@
           </li>
           <li><span class="contactInfo">info@benkam.be</span></li>
         </ul>
-
-        <h1 class="contactMainInfo">База производства :</h1>
-        <li>
-          Навоийская область, Карманинский <br />
-          район, СЭЗ “Навои”
-        </li>
-        <li>+998 79 222 00 00</li>
       </a-col>
-      <a-col class="mt-5" :span="6" :offset='3'>
-        <h1 class="contactMain">BENKAM в России</h1>
-        <ul>
-          <li>Россия, г. Химки, ул. Рабочая 2А, корпус 22 А. Офис 206В</li>
-          <li>+7 (967) 034-00-07 +7 (495) 795-74-84</li>
-          <li>info@benkam.ru sales@benkam.ru</li>
-        </ul>
-
-        <h1 class="contactMain mt-5">BENKAM в Европе</h1>
+      
+      <a-col :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 12, offset: 2 }"
+        :lg="{ span: 10, offset: 2 }">
+        <h1 class="contactMain ">BENKAM в Европе</h1>
         <ul>
           <li>
             ул. Галинес 1, Вильнюс, Литва 14247 Регистрационный номер: 304590804
@@ -338,6 +455,32 @@
           <li>Email: a.yokubov@benkam.be</li>
         </ul>
       </a-col>
+      </a-row>
+      <a-row>
+        <a-col :xs="{ span: 24 }"
+        :sm="{ span: 24 }"
+        :md="{ span: 8, offset: 2 }"
+        :lg="{ span: 10, offset: 2 }"> 
+
+        <h1 class="contactMainInfo">База производства :</h1>
+        <li>
+          Навоийская область, Карманинский <br />
+          район, СЭЗ “Навои”
+        </li>
+        <li>+998 79 222 00 00</li>
+      </a-col>
+      <a-col :xs="{ span: 24 }"
+        :sm="{ span: 22, offset:2}"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 10, offset: 2 }">
+        <h1 class="contactMain">BENKAM в России</h1>
+        <ul class="benRu">
+          <li>Россия, г. Химки, ул. Рабочая 2А, корпус 22 А. Офис 206В</li>
+          <li>+7 (967) 034-00-07 +7 (495) 795-74-84</li>
+          <li>info@benkam.ru sales@benkam.ru</li>
+        </ul>
+      </a-col>
+      </a-row>
     </a-row>
     <a-row class="secthr">
       <a-col :span="24">
@@ -346,37 +489,44 @@
           <span class="miniTitleMission">Партнеры</span>
         </div>
       </a-col>
-      <a-col :span="18">
-        <div class="row">
-          <div class="col-md-6" style="height: 480px; display:flex;justify-content:center;">
+      <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 22, offset:2}"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 5 }">
           <h1 class="partnerTitle">
             Каждый партнер - это ценность для <br />нас.
           </h1>
-          </div>
-          <div class="col-md-6" > 
-          <img style="margin:10rem 0;"  src="../assets/img/eco.png" />
-          <!- <div style="position:relative;height: 480px;background: #404040;opacity: 0.03;    z-index:1; "></div> ->
-          </div>
-        </div>
-        <div class="row">  
-        <div class="col-md-6" style="
-height: 480px; background: #6D7D92;">
-          <img
-            style="background: #6d7d92; opacity: 0.16;margin:8rem 0;"
-            src="../assets/img/alu.png"
-          />
-        </div>
-      <div class="col-md-6" style="
-height: 480px;background: #FFFFFF;">
-          <img style="margin:8rem 0;" src="../assets/img/emmebi.png" />
-      </div>
-        </div>
       </a-col>
-      <a-col :span="6" style="height: 960px; background:#ECFFED; ">
+          <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 22, offset:2}"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 5, offset: 2 }" > 
+          <img style="margin:10rem 0;"  src="../assets/img/eco.png" />
+          <!-- <div style="position:relative;height: 480px;background: #404040;opacity: 0.03;    z-index:1; "></div> -->
+       </a-col>
+        <a-col  :xs="{ span: 24 }"
+        :sm="{ span: 22, offset:2}"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 5, offset: 2 }">
         <img width="100%" style="margin:20rem 0;" src="../assets/img/akzo.png" />
       </a-col>
+        <a-col style="position:absolute; margin-top:45rem" :xs="{ span: 24 }"
+        :sm="{ span: 22, offset:2}"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 5, offset: 2 }">
+          <img
+            src="../assets/img/alu.png"
+          />
+        </a-col>
+      <a-col style="position:absolute; margin-top:45rem; margin-left:40rem" :xs="{ span: 24 }"
+        :sm="{ span: 22, offset:2}"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 5, offset: 2 }">
+          <img  src="../assets/img/emmebi.png" />
+      </a-col>
+     
     </a-row>
-    <a-row class="secthr" >
+   <!--<a-row class="secthr" >
       <a-col :span="10" :offset="2">
         <h1 class="connectform">
           Заполните форму обратной <br />
@@ -537,7 +687,6 @@ height: 480px;background: #FFFFFF;">
         <span>Benkam в социальных сетях :</span>
       </a-col>
     </a-row> -->
-    
   </div>
 </template>
 
@@ -547,31 +696,58 @@ export default {
   props: {
     msg: String,
   },
+    methods: {
+    onChange(a, b, c) {
+      console.log(a, b, c);
+    },
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.item1 { grid-area: logo; }
-.item2 { grid-area: one; }
-.item3 { grid-area: two; }
-.item4 { grid-area: footer; 
- display: flex;
- justify-content: left;
+.ant-carousel{
+  height:100vh; 
 }
-.miniInfo{
+.ant-carousel >>> .slick-slide {
+  text-align: center;
+  height:100vh;
+  line-height: 160px;
+  
+  /* background: #364d79; */
+  overflow: hidden;
+}
+
+.ant-carousel >>> .slick-slide h3 {
+  color: #fff;
+}
+.item1 {
+  grid-area: logo;
+}
+.item2 {
+  grid-area: one;
+}
+.item3 {
+  grid-area: two;
+}
+.item4 {
+  grid-area: footer;
+  display: flex;
+  justify-content: left;
+}
+.miniInfo {
   margin-top: 105px;
 }
 ul {
   list-style-type: none;
 }
-.footerlogoText{
+.footerlogoText {
   text-align: left;
   /* margin-top:25px; */
 }
-.footerLogo{
+.footerLogo {
   display: grid;
-  justify-self:left;
+  justify-self: left;
   max-width: 500px;
 }
 .geoBox {
@@ -595,12 +771,11 @@ ul {
 .footer {
   padding: 150px 0;
   background-color: #fafafa;
-display: grid;
+  display: grid;
   grid-template-areas:
-    
-    'logo  logo one  one two two'
-    'footer footer footer footer footer footer';
-  grid-template-rows:300px;  
+    "logo  logo one  one two two"
+    "footer footer footer footer footer footer";
+  grid-template-rows: 300px;
   grid-gap: 10px;
   padding: 100px 45px;
 }
@@ -706,6 +881,10 @@ display: grid;
 
   color: #656565;
 }
+.sec6Img{
+  position: absolute;
+  height: 100vh;
+}
 .requiredInfo {
   text-align: left;
   font-family: Inter;
@@ -756,7 +935,7 @@ display: grid;
   font-size: 32px;
   line-height: 48px;
   /* or 150% */
- margin-top:10rem;
+  margin-top: 10rem;
   letter-spacing: 0.05em;
 
   /* Benkam (text) */
@@ -777,7 +956,7 @@ display: grid;
 
   color: #282828;
 }
-.contactInfoAlign{
+.contactInfoAlign {
   text-align: left;
 }
 .contactInfo {
@@ -793,7 +972,7 @@ display: grid;
   /* Benkam (text) */
 
   color: #282828;
- text-align: left;
+  text-align: left;
 }
 .contactMain {
   font-family: Inter;
@@ -838,6 +1017,7 @@ display: grid;
   max-width: 560px;
   height: 280px;
   left: 0px;
+  margin-top:55rem  ;
 
   background: #d8f4da;
 }
@@ -1078,7 +1258,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   /* or 150% */
-
+  max-width: 640px;
   letter-spacing: 0.05em;
   text-align: left;
   /* Benkam (teht) gray */
@@ -1086,17 +1266,18 @@ p {
   color: #656565;
 }
 .waterImg {
-  width: 100%;
+    width: 100%;
   height: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
+  padding-bottom:5rem;
   z-index: -1;
 }
 /*********Section 5*****/
 .fiveMaint {
   margin-top: 15rem;
-  width: 560px;
+  max-width: 560px;
   height: 144px;
   text-align: left;
   font-family: Styrene A LC;
@@ -1153,7 +1334,7 @@ p {
 /**sec6 */
 
 .sec6 {
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 10rem;
   /* background-image: url("../assets/img/6.png"); */
   position: relative;
@@ -1162,7 +1343,7 @@ p {
   position: absolute;
   text-align: left;
   margin-top: 10rem;
-  margin-left: 10rem ;
+  margin-left: 10rem;
   width: 40vw;
   z-index: 1;
 }
@@ -1186,7 +1367,7 @@ p {
 }
 .sec6Info {
   /* position: absolute; */
-  width: 880px;
+  max-width: 880px;
   height: 48px;
 
   font-family: Inter;
@@ -1443,66 +1624,194 @@ p {
   max-width: 400px;
   height: 208px;
 }
-@media screen and (max-width: 375px)  {
-  .thrtitle{
-    display:grid;
-      height: 120px;
+@media only screen and (max-width: 375px) {
+  .thrtitle {
+    display: grid;
+    height: 120px;
   }
-  .lineGrey{
-    position:absolute;
+  .lineGrey {
+    position: absolute;
     margin-left: 5rem;
-    margin-top:6.5rem;
+    margin-top: 6.5rem;
   }
-  .greenInfo{
-     width: 65vw;
-  height: 35vh;
+  .greenInfo {
+    width: 65vw;
+    height: 33vh !important;
   }
-  .info{
-      font-size: 16px;
-       line-height: 22px;
+  .info {
+    font-size: 16px;
+    line-height: 22px;
 
-  letter-spacing: 0.015em;
-  width: 55vw;
-
+    letter-spacing: 0.015em;
+    width: 55vw;
   }
   .mainLogo {
-  width: 57vw;
-  height: 15vh;
+    width: 57vw;
+    height: 15vh;
   }
-  .secInfotwo{
+  .secInfotwo {
     margin-top: 4rem;
   }
+
+  .waterTitle{
+    font-size: 30px;
+  }
+  .waterInfo{
+    font-size: 16px;
+  }
+  .waterUnderImg{
+    font-size: 12px;
+    padding:15px;
+  }
+  .fiveMaint{
+    margin-left: 15px;
+  }
+   .fiveMainb{
+     margin-left: 15px;
+   }
+    .fiveMainc{
+      margin-left: 25px;
+    }
+      .sec6Box {
+  position: absolute;
+  text-align: left;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  padding-top: 0px  !important;
+  width: 100vw;
+  z-index: 1;
+  
 }
-@media screen and (max-width: 768px)  {
-  .thrtitle{
-    display:grid;
-      height: 120px;
-      max-width: 350px;
+.sec6Title {
+  font-size: 25px !important;
+  margin-bottom: 0;
+}
+.sec6Info{
+  font-size: 12px;
+  margin-top: 0;
+  line-height:12px
+}
+.sec6{
+  height: 30vh;
+}
+.thrtitleD8{
+  display: grid;
+  width:90vw !important;
+  height: 20vh  !important;
+}
+.aboutMaint{
+  font-size: 15px  !important;
+  padding: 15px;
+  margin-top: 85px;
+}
+.aboutMainc{
+  margin-top: 55px;
+  padding-left:15px;
+}
+
+.contactMain{
+  font-size:22px;
+}
+.benRu{
+  padding:0 25px;
+}
+}
+@media screen and (max-width: 768px) {
+  
+
+.thrtitleD8{
+  margin-top:350px ;
+  display: grid;
+  width:40vw;
+  height: 12vh;
+}
+.aboutMaint{
+  font-size: 25px  !important;
+  padding: 15px;
+  margin-top: 85px;
+}
+.aboutMainc{
+  margin-top: 55px;
+  /* padding-left:15px; */
+  font-size: 20px;
+  width: 70vw;
+}
+  .thrtitle {
+    display: grid;
+    height: 120px;
+    max-width: 350px;
   }
-  .lineGrey{
-    position:absolute;
+  .lineGrey {
+    position: absolute;
     margin-left: 5rem;
-    margin-top:6.5rem;
+    margin-top: 6.5rem;
   }
-  .greenInfo{
-     width: 65vw;
-     height: 19vh;
+  .greenInfo {
+    width: 65vw;
+    height: 19vh;
   }
-  .info{
-      font-size: 26px;
-       line-height: 22px;
+  .info {
+    font-size: 26px;
+    line-height: 22px;
 
-  letter-spacing: 0.015em;
-  width: 60vw;
-
+    letter-spacing: 0.015em;
+    width: 60vw;
   }
   .mainLogo {
-  width: 57vw;
-  height: 15vh;
+    width: 57vw;
+    height: 15vh;
   }
-  .secInfotwo{
+  .secInfotwo {
     margin-top: 5rem;
   }
+  .thrtitleNoneBackg{
+    display: grid;
+    height: 120px;
+    max-width: 350px;
+  }
+  .fiveMaint{
+    margin-top: 15px;
+  }
+  .fiveMainb{
+    margin-top: 0;
+  }
+  .line65{
+    margin-top: 35px;
+  }
+  .fiveMainc{
+    margin-top: 75px;
+  }
+    .waterTitle{
+      font-size: 45px;
+    }
+
+  .waterInfo{
+    margin-left: 15px;
+    color: #ffffff;
+  }
+  .sec6Box {
+  position: absolute;
+  text-align: left;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  padding: 20px;
+  width: 100vw;
+  z-index: 1;
+  
+}
+.sec6Title {
+  font-size: 45px;
+  
+}
+.sec6Info{
 }
 
+.sec6Img{
+  height: 30vh;
+}
+
+.contactMain{
+  font-size:22px;
+}
+}
 </style>
