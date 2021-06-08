@@ -19,31 +19,69 @@
     >
     </vue-particles>
     <a-row class="secone">
-      <a-col :span="18" :offset="6">
+      <a-col :span="24" style="display: flex">
+        <div class="thrtitleNoneBackg">
+          <span class="lineGrey"></span>
+          <div style="margin-top: auto; margin-bottom: 2.3rem">
+            <span class="miniTitle">01.</span>
+            <p class="seconeInfo">Современные алюминиевые решения</p>
+          </div>
+        </div>
         <div class="mainImage">
           <img class="mainLogo" src="../assets/img/BenkamBig.png" />
-          <p class="info">Современные алюминиевые решения</p>
         </div>
       </a-col>
     </a-row>
     <a-row class="sectwo">
-      <a-col :span="24">
         <div class="parttwo">
           <div class="img2">
-            <img width="100%" src="../assets/img/2.jpg" />
+            <div class="thrtitleNoneBackg2"></div>
+            <div class="t34">
+              <span class="whiteLine"></span>
+              <div style="margin-top: auto; margin-bottom: 5.3rem">
+                <span class="miniTitle" style="color: white">02.</span>
+                <p class="sectwoInfo">BENKAM ALU EXTRUSIONS ®</p>
+              </div>
+            </div>
+            <img src="../assets/img/2.jpg" />
           </div>
           <div class="greenInfo">
-            <h4>BENKAM ALU EXTRUSIONS ®</h4>
+            <span>BENKAM ALU EXTRUSIONS ®</span>
             <p class="mt-5">
               Молодое, стремительно развивающееся предприятие, специализируется
               на производстве алюминиевого профиля различных типов и размеров.
             </p>
           </div>
         </div>
-      </a-col>
     </a-row>
-    <a-row class="secthr">
-      <a-col
+    <a-row>
+      <div class="gridThird">
+        <div class="gridth-item1">
+          <div class="thrtitleNoneBackg">
+            <span
+              class="lineGrey"
+              style="margin-top: 2.7rem; margin-bottom: auto"
+            ></span>
+            <div style="margin-top: 2.1rem; margin-bottom: auto">
+              <span class="miniTitle">03.</span>
+              <p class="seconeInfo">Производственная мощность</p>
+            </div>
+          </div>
+        </div>
+        <div class="gridth-item2">
+          <div class="thBackg2"></div>
+          <div class="t342">
+            <span class="miniTitleth">28</span>
+          </div>
+          <span>тысяч тонн в год</span>
+          <span>Производительность собственной линии анодирования.</span>
+        </div>
+        <div class="gridth-item3"></div>
+        <div class="gridth-item4"></div>
+        <div class="gridth-item5"></div>
+        <div class="gridth-item6"></div>
+      </div>
+      <!-- <a-col
         :xs="{ span: 24 }"
         :sm="{ span: 24 }"
         :md="{ span: 24 }"
@@ -108,9 +146,17 @@
           <h4 class="miniTitlesec">тысяч тонн в год</h4>
           <p class="miniTt">Производительная мошность изготовления профиля.</p>
         </div>
-      </a-col>
+      </a-col> -->
     </a-row>
-    <a-row type="flex">
+    <a-row>
+     <div class="gridFour">
+       <div class="gridf-item1">1</div>
+       <div class="gridf-item2">2</div>
+       <div class="gridf-item3">3</div>
+     
+     </div>
+    </a-row>
+    <!-- <a-row type="flex">
       <a-col :span="24">
         <div class="thrtitle">
           <span class="lineGrey"></span>
@@ -186,7 +232,7 @@
           </div>
         </a-carousel>
       </a-col>
-    </a-row>
+    </a-row> -->
     <a-row type="flex">
       <a-col :span="24">
         <div class="thrtitleNoneBackg">
@@ -233,9 +279,8 @@
       </a-col>
     </a-row>
     <a-row>
-      <a-col :span="24" class="sec6">
         <div class="sec6Img">
-          <img width="100%" height="100%" src="../assets/img/6.png" />
+          <img width="100%" height="auto" src="../assets/img/6.png" />
         </div>
         <div class="sec6Box">
           <h1 class="sec6Title">Инновационность</h1>
@@ -245,7 +290,6 @@
             улучшения качества продукции, востребованное рынком.
           </h6>
         </div>
-      </a-col>
     </a-row>
 
     <a-row class="mt-5" type="flex">
@@ -282,7 +326,7 @@
         </h5>
       </a-col>
     </a-row>
-    <a-row >
+    <a-row>
       <a-col :span="24">
         <div class="thrtitleNoneBackg">
           <span class="lineGrey"></span>
@@ -359,7 +403,7 @@
         </a-carousel>
       </a-col>
     </a-row>
-    <!-- <a-row class="secthr">
+    <a-row>
       <a-col :span="24" class="geoBox">
         <div class="geoBoxDec">
           <h1 class="geoTitle">Рассчитайте точный срок доставки</h1>
@@ -419,16 +463,17 @@
       </a-col>
 
       <a-col :span="22" :offset="2">
-        <div class="geoMap">
-          <img class="geoMap1" src="../assets/img/country.png" />
+        <!-- <div class="geoMap"> -->
+        <!-- <img class="geoMap1" src="../assets/img/country.png" /> -->
 
-          <img class="geoMap2" src="../assets/img/map.png" />
+        <mapWorld></mapWorld>
+        <!-- <img class="geoMap2" src="../assets/map/map.svg" /> -->
 
-          <img class="geoMap3" src="../assets/img/uzbekistan.png" />
-        </div>
+        <!-- <img class="geoMap3" src="../assets/img/uzbekistan.png" /> -->
+        <!-- </div> -->
       </a-col>
-    </a-row> -->
-    <a-row class="secthr">
+    </a-row>
+    <a-row>
       <a-col :span="24">
         <div class="thrtitleNoneBackg">
           <span class="lineGrey"></span>
@@ -508,7 +553,7 @@
         </a-col>
       </a-row>
     </a-row>
-    <a-row class="secthr">
+    <a-row>
       <a-col :span="24">
         <div class="thrtitle">
           <span class="lineGrey"></span>
@@ -516,25 +561,34 @@
         </div>
       </a-col>
       <a-col :span="24">
-      <div class="partnerContainer">
-        <div class="grid-item-1">
-          <h1 class="partnerTitle ">
-          Каждый партнер - это ценность для <br />нас.
-          </h1>
+        <div class="partnerContainer">
+          <div class="grid-item-1">
+            <h1 class="partnerTitle">
+              Каждый партнер - это ценность для <br />нас.
+            </h1>
+          </div>
+          <div class="grid-item-2 center">
+            <img src="../assets/img/eco.png" />
+          </div>
+          <div class="grid-item-3 center">
+            <img width="100%" src="../assets/img/akzo.png" />
+          </div>
+          <div class="grid-item-4 center">
+            <img src="../assets/img/alu.png" />
+          </div>
+          <div class="grid-item-5 center">
+            <img src="../assets/img/emmebi.png" />
+          </div>
         </div>
-        <div class="grid-item-2 center"> <img src="../assets/img/eco.png" /></div>
-        <div class="grid-item-3 center"><img width="100%" src="../assets/img/akzo.png" /></div>
-        <div class="grid-item-4 center"><img src="../assets/img/alu.png" /></div>
-        <div class="grid-item-5 center"> <img src="../assets/img/emmebi.png" /></div>
-     
-      </div>
       </a-col>
     </a-row>
-    <a-row class="secthr" >
-      <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+    <a-row>
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 22, offset: 2 }"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 10, offset: 2 }"
+      >
         <h1 class="connectform">
           Заполните форму обратной <br />
           связи и мы оперативно <br />свяжемся с вами !
@@ -543,47 +597,59 @@
           >Поля отмеченные (*) оязательные для заполнения !</span
         >
         <a-row style="margin-top: 55px">
-          <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+          <a-col
+            :xs="{ span: 24 }"
+            :sm="{ span: 22, offset: 2 }"
+            :md="{ span: 10, offset: 3 }"
+            :lg="{ span: 10, offset: 2 }"
+          >
             <input placeholder="Ваше Имя" />
           </a-col>
-          <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+          <a-col
+            :xs="{ span: 24 }"
+            :sm="{ span: 22, offset: 2 }"
+            :md="{ span: 10, offset: 3 }"
+            :lg="{ span: 10, offset: 2 }"
+          >
             <input placeholder="Ваша Фамилия" />
           </a-col>
-          <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+          <a-col
+            :xs="{ span: 24 }"
+            :sm="{ span: 22, offset: 2 }"
+            :md="{ span: 10, offset: 3 }"
+            :lg="{ span: 10, offset: 2 }"
+          >
             <input placeholder="Номер тел.:  + 998 (__) ___ __ __" />
           </a-col>
-          <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+          <a-col
+            :xs="{ span: 24 }"
+            :sm="{ span: 22, offset: 2 }"
+            :md="{ span: 10, offset: 3 }"
+            :lg="{ span: 10, offset: 2 }"
+          >
             <input placeholder="E-mail (электронная почта)" />
           </a-col>
-          <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
-            <textarea
+          <a-col
+            :xs="{ span: 24 }"
+            :sm="{ span: 22, offset: 2 }"
+            :md="{ span: 10, offset: 3 }"
+            :lg="{ span: 10, offset: 2 }"
+          >
+            <!-- <textarea
                 width="100%"
               name="text"
               placeholder="Комментарий к заявке "
               id=""
               cols="60"
               rows="5"
-            ></textarea>
+            ></textarea> -->
           </a-col>
-          <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+          <a-col
+            :xs="{ span: 24 }"
+            :sm="{ span: 22, offset: 2 }"
+            :md="{ span: 10, offset: 3 }"
+            :lg="{ span: 10, offset: 2 }"
+          >
             <h1 class="requiredConfirm">
               Я согласен на обработку персональных данных
             </h1>
@@ -593,10 +659,12 @@
           </a-col>
         </a-row>
       </a-col>
-      <a-col :xs="{ span: 24 }"
-          :sm="{ span: 22, offset: 2 }"
-          :md="{ span: 10, offset: 3 }"
-          :lg="{ span: 10, offset: 2 }">
+      <a-col
+        :xs="{ span: 24 }"
+        :sm="{ span: 22, offset: 2 }"
+        :md="{ span: 10, offset: 3 }"
+        :lg="{ span: 10, offset: 2 }"
+      >
         <a-row>
           <div class="reqInfo">
             <div class="reqInfoTitle">
@@ -619,60 +687,75 @@
       </a-col>
     </a-row>
     <a-row>
-     <div class=" footer" >
-     
-      <div class="item1 footerLogo">
-          <img  src="../assets/img/footerlogo.png" />
-          <span class="footerlogoText"
-            >Компания Avant Metal Group зарекомендовала себя как надежного и
-            ответственного производителя, в продукции которого вы можете быть
-            уверены.
-          </span>
+      <div class="footer">
+        <div class="item1">
+          <div class="footerLogo">
+            <img class="footerLogoImg" src="../assets/img/footerlogo.png" />
+            <span class="footerlogoText textposition" style="max-width: 528px"
+              >Компания Avant Metal Group зарекомендовала себя как надежного и
+              ответственного производителя, в продукции которого вы можете быть
+              уверены.
+            </span>
+          </div>
         </div>
         <div class="item2">
-        <span>О нас</span>
-        <ul>
-          <li>Миссия и видение</li>
-          <li>Профиль компании</li>
-          <li>Политика IMS</li>
-        </ul>
-        <div class="miniInfo">
-        <span >База знаний</span>
-        <ul>
-          <li>Почему алюминий</li>
-          <li>Сплавы</li>
-          <li>Лабороторные испытания</li>
-          <li>Области применения</li>
-        </ul>
+          <div class="footerAboutText">
+            <span class="footerlogoText">О нас</span>
+            <ul>
+              <li class="footerlogoText">Миссия и видение</li>
+              <li class="footerlogoText">Профиль компании</li>
+              <li class="footerlogoText">Политика IMS</li>
+            </ul>
+          </div>
         </div>
-     </div>
-      <div class="item3">
-        <span>Услуги</span>
-        <ul>
-          <li>Экструзия</li>
-          <li>Андонирование</li>
-          <li>Покраска</li>
-          <li>Упаковка и логистика</li>
-        </ul>
-        <ul class="miniInfo">
-          <li>Карьера</li>
-          <li>Новости</li>
-          <li>Контакты</li>
-        </ul>
+        <div class="item3">
+          <div class="footerAboutText">
+            <span class="footerlogoText">База знаний</span>
+            <ul>
+              <li class="footerlogoText">Почему алюминий</li>
+              <li class="footerlogoText">Сплавы</li>
+              <li class="footerlogoText">Лабороторные испытания</li>
+              <li class="footerlogoText">Области применения</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item4">
+          <div class="footerAboutText">
+            <span class="footerlogoText">Услуги</span>
+            <ul>
+              <li class="footerlogoText">Экструзия</li>
+              <li class="footerlogoText">Андонирование</li>
+              <li class="footerlogoText">Покраска</li>
+              <li class="footerlogoText">Упаковка и логистика</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item5">
+          <ul class="footerAboutText">
+            <li class="footerlogoText">Карьера</li>
+            <li class="footerlogoText">Новости</li>
+            <li class="footerlogoText">Контакты</li>
+          </ul>
+        </div>
+        <div class="item6">
+          <span>
+            © 2017 <span style="color: #18b025">Benkam alu extrusions</span>.
+            Все права защищены.
+          </span>
+        </div>
       </div>
-      <div class="item4">
-        <span> © 2017 Benkam alu extrusions. Все права защищены. </span>
-        <span>Benkam в социальных сетях :</span> 
-      </div>
-    </div>
     </a-row>
-    
   </div>
 </template>
 
 <script>
+import mapWorld from "../components/Map.vue";
 export default {
   name: "HelloWorld",
+  components: {
+    mapWorld,
+  },
   props: {
     msg: String,
   },
@@ -681,32 +764,179 @@ export default {
       console.log(a, b, c);
     },
   },
+  data() {
+    return {};
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.partnerContainer{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-auto-rows: minmax(350px,auto);
+<style scoped >
+.gridFour{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(680px, auto);
+ }
+.gridf-item1 {
+  grid-row: span 2;
+  background:#F8F8F8 ;
+}
+.gridf-item2 {
+  background: #D8F4DA;
+}
+.gridf-item3 {
+  background:#F0F4F7;
+}
 
+.gridThird {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(680px, auto);
 }
-.grid-item-1{
+.gridth-item1 {
+  background: #f2f2f2;
+}
+.gridth-item2 {
+  background: url("../assets/img/Frame73.png");
+  background-size: 100% 100%;
+}
+.gridth-item3 {
+}
+.gridth-item4 {
+}
+.gridth-item5 {
+  background: #2dad38;
+}
+.gridth-item6 {
+  background: url("../assets/img/block.png");
+  background-size: 100% 100%;
+}
+.gridth-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.miniTitleth {
+  position: absolute;
+  font-family: Styrene A LC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  /* identical to box height, or 114% */
+
+  text-align: right;
+  letter-spacing: 0.015em;
+
+  /* Light */
+
+  color: #ffffff;
+}
+.onTopTitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+
+  letter-spacing: 0.25em;
+  opacity: 1;
+  /* Light */
+
+  color: #ffffff;
+}
+.whiteLine {
+  width: 112px;
+  height: 1px;
+  margin-top: auto;
+  margin-bottom: 5.8rem;
+  margin-left: 7.3rem;
+  background: #ffffff;
+}
+.sectwoInfo {
+  position: absolute;
+  width: 240px;
+  height: 72px;
+  text-align: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.25em;
+
+  /* Light */
+
+  color: #ffffff;
+}
+.seconeInfo {
+  position: absolute;
+  width: 240px;
+  height: 72px;
+  text-align: left;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+  margin-bottom: 1rem;
+  margin-top: auto;
+  letter-spacing: 0.25em;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  /* Benkam (text) */
+
+  color: #282828;
+}
+path {
+  fill: #558b2f;
+  cursor: pointer;
+  -webkit-transition: all 150ms;
+  -moz-transition: all 150ms;
+  -o-transition: all 150ms;
+  transition: all 150ms;
+}
+path:hover {
+  opacity: 0.85;
+}
+.land {
+  fill-opacity: 1;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+}
+.footerLogoImg {
+  margin-top: 120px;
+  margin-left: 56px;
+}
+.partnerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(350px, auto);
+}
+.grid-item-1 {
   grid-column: span 1;
 }
-.grid-item-2{
+.grid-item-2 {
   grid-column: span 1;
 }
-.grid-item-3{
+.grid-item-3 {
   grid-column-start: 3;
   grid-row: span 2;
 }
 
-.grid-item-4{
+.grid-item-4 {
   grid-column: span 1;
 }
-.grid-item-5{
+.grid-item-5 {
   grid-column: span 1;
 }
 
@@ -740,21 +970,25 @@ export default {
 .ant-carousel >>> .slick-slide h3 {
   color: #fff;
 }
-.item1{
+.item1 {
   grid-column: span 1;
-}
-.item2{
-  grid-column: span 1;
-}
-.item3{
-  grid-column-start: 3;
   grid-row: span 2;
 }
-
-.item4{
+.item2 {
   grid-column: span 1;
 }
-.item5{
+.item3 {
+  grid-column: span 1;
+  grid-column-start: 3;
+}
+
+.item4 {
+  grid-column: span 1;
+}
+.item5 {
+  grid-column: span 1;
+}
+.item6 {
   grid-column: span 1;
 }
 
@@ -773,21 +1007,38 @@ export default {
   display: flex;
   justify-content: left;
 } */
-.miniInfo {
-  margin-top: 105px;
-}
+
 ul {
   list-style-type: none;
 }
+.footerAboutText {
+  margin-top: 120px !important;
+  text-align: left;
+  margin-left: 4em;
+}
 .footerlogoText {
-align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
-  /* margin-top:25px; */
+  letter-spacing: 2px;
+
+  /* Benkam (text) */
+
+  color: #282828;
+}
+.textposition {
+  text-align: left;
+  margin-left: 56px;
+  margin-top: 66px;
 }
 .footerLogo {
   display: grid;
-  justify-self: left;
-  max-width: 500px;
+  /* justify-self: left; */
+  /* max-width: 500px; */
 }
 .geoBox {
   height: 272px;
@@ -808,10 +1059,12 @@ align-items: center;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .footer {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-auto-rows: minmax(350px,auto);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  /* grid-auto-rows: minmax(350px,auto); */
+  grid-auto-rows: auto auto auto auto auto 100px;
 
+  background: #fafafa;
 }
 #particles-js {
   height: 100%;
@@ -915,10 +1168,6 @@ align-items: center;
 
   color: #656565;
 }
-.sec6Img {
-  position: absolute;
-  height: 100vh;
-}
 .requiredInfo {
   text-align: left;
   font-family: Inter;
@@ -976,8 +1225,8 @@ align-items: center;
 
   color: #282828;
 }
-.center{
-    display: flex;
+.center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -1066,6 +1315,42 @@ align-items: center;
   max-width: 560px;
   height: 280px;
   left: 0px;
+  margin-top: 15rem;
+}
+.thBackg2 {
+  /* display: flex;
+  justify-content: flex-start; */
+  width: 320px;
+  height: 240px;
+  /* left: 0px; */
+  background: #f2f2f2;
+  opacity: 0.08;
+}
+.t342 {
+
+  width: 320px;
+  height: 240px;
+  position: absolute;
+}
+.thrtitleNoneBackg2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 560px;
+  height: 280px;
+  left: 0px;
+  position: absolute;
+
+  background: #f2f2f2;
+  opacity: 0.08;
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.t34 {
+  display: flex;
+  justify-content: flex-start;
+  width: 560px;
+  height: 280px;
+  left: 0px;
+  position: absolute;
 }
 .miniTitleone {
   font-family: Styrene A LC;
@@ -1121,6 +1406,10 @@ align-items: center;
 .img2 {
   margin-top: 7rem;
 }
+.img2 img {
+  width: 100%;
+  height: auto;
+}
 .parttwo {
   display: flex;
   justify-content: center;
@@ -1128,13 +1417,12 @@ align-items: center;
 .secone {
   height: 80vh;
 }
-/* .secthr {
-  /* margin-top: 10rem; /
-  height: 120vh;
-} */
 .mainImage {
-  margin-top: 20vh;
-  text-align: left;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .info {
   margin-top: 50px;
@@ -1162,14 +1450,50 @@ align-items: center;
   position: absolute;
   background-color: #18b025;
 
-  width: 25vw;
-  height: 35vh;
+  width: 641px;
+  height: 688px;
   padding: 1rem;
 }
-.greenInfo h4,
-p {
-  color: white;
+.greenInfo p {
+  position: relative;
+  width: 400px;
+  height: 160px;
+  left: 80px;
+  top: 3rem;
+  text-align: left;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  letter-spacing: 0.1em;
+
+  /* Light_text */
+
+  color: #fbfbfb;
 }
+.greenInfo span {
+  position: relative;
+  width: 400px;
+  height: 120px;
+  left: 0px;
+  top: 3rem;
+  font-family: Styrene A LC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  /* or 117% */
+  letter-spacing: 0.015em;
+
+  /* _Light */
+
+  color: #fbfbfb;
+}
+
 .miniTitle {
   width: 24px;
   height: 32px;
@@ -1372,12 +1696,6 @@ p {
 }
 /**sec6 */
 
-.sec6 {
-  /* height: 100vh; */
-  margin-top: 10rem;
-  /* background-image: url("../assets/img/6.png"); */
-  position: relative;
-}
 .sec6Box {
   position: absolute;
   text-align: left;
@@ -1385,6 +1703,10 @@ p {
   margin-left: 10rem;
   width: 40vw;
   z-index: 1;
+}
+.sec6Img{
+  position: absolute;
+  width: 100%;
 }
 .sec6Title {
   /* position: absolute; */
@@ -1664,55 +1986,72 @@ p {
   height: 208px;
 }
 @media only screen and (max-width: 375px) {
-  
-.grid-item-1{
-  grid-column:  1 / -1;
-}
-.grid-item-2{
-  grid-row-start: 2;
-  grid-column: 1/-1;
-}
-.grid-item-3{
-  
-  grid-row-start: 3  !important;
-  grid-column: 1/-1;
-  /* grid-row: span 2; */
-}
+  .grid-item-1 {
+    grid-column: 1 / -1;
+  }
+  .grid-item-2 {
+    grid-row-start: 2;
+    grid-column: 1/-1;
+  }
+  .grid-item-3 {
+    grid-row-start: 3 !important;
+    grid-column: 1/-1;
+    /* grid-row: span 2; */
+  }
 
-.grid-item-4{
-  
-  grid-row-start: 4;
-  grid-column: 1/-1;
-}
-.grid-item-5{
-  
-  grid-row-start: 5;
-  grid-column: 1/-1;
-}
-.item1{
-  grid-column:  1 / -1;
-}
-.item2{
- 
-  grid-row-start: 2;
-  grid-column: 1/-1;
-}
-.item3{
-  grid-row-start: 3;
-  grid-column: 1/-1;
-}
+  .grid-item-4 {
+    grid-row-start: 4;
+    grid-column: 1/-1;
+  }
+  .grid-item-5 {
+    grid-row-start: 5;
+    grid-column: 1/-1;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-auto-rows: minmax(190px,auto); */
+    grid-template-rows: 390px 190px 190px 190px 190px 59px;
+  }
+  .item1 {
+    grid-column: 1 /-1;
+    grid-row-start: 1;
+  }
+  .item2 {
+    grid-row-start: 2;
+    grid-column: 1/-1 !important;
+  }
+  .item3 {
+    grid-row-start: 3;
+    grid-column: 1/-1 !important;
+  }
 
-.item4{
-  
-  grid-row-start: 4;
-  grid-column: 1/-1;
-}
-.item5{
-  
-  grid-row-start: 5;
-  grid-column: 1/-1;
-}
+  .item4 {
+    grid-row-start: 4;
+    grid-column: 1/-1 !important;
+  }
+  .item5 {
+    grid-row-start: 5;
+    grid-column: 1/-1 !important;
+  }
+  .item6 {
+    grid-row-start: 6 !important;
+    grid-column: 1/-1 !important;
+  }
 
+  .textposition {
+    text-align: left;
+    margin: 66px 56px;
+  }
+
+  .footerLogoImg {
+    width: 15em;
+    margin-top: 5em;
+  }
+  .footerAboutText {
+    margin: 50px 4em;
+    text-align: left;
+  }
   .thrtitle {
     display: grid;
     height: 120px;
@@ -1778,9 +2117,9 @@ p {
     margin-top: 0;
     line-height: 12px;
   }
-  .sec6 {
+  /* .sec6 {
     height: 30vh;
-  }
+  } */
   .thrtitleD8 {
     display: grid;
     width: 90vw !important;
@@ -1810,73 +2149,75 @@ p {
   .emmebi {
     position: relative;
     margin-top: 0rem;
-    margin-left: 0  !important;
+    margin-left: 0 !important;
   }
   .ecoImg {
     margin: 0;
   }
   .akzoImg {
     margin: 0;
-    width:100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
- .grid-item-1{
-  grid-column:  1 / -1;
-}
-.grid-item-2{
-  grid-row-start: 2;
-  grid-column: 1/-1;
-}
-.grid-item-3{
-  
-  grid-row-start: 3  !important;
-  grid-column: 1/-1;
-  /* grid-row: span 2; */
-}
+  .grid-item-1 {
+    grid-column: 1 / -1;
+  }
+  .grid-item-2 {
+    grid-row-start: 2;
+    grid-column: 1/-1;
+  }
+  .grid-item-3 {
+    grid-row-start: 3 !important;
+    grid-column: 1/-1;
+    /* grid-row: span 2; */
+  }
 
-.grid-item-4{
-  
-  grid-row-start: 4;
-  grid-column: 1/-1;
-}
-.grid-item-5{
-  
-  grid-row-start: 5;
-  grid-column: 1/-1;
-}
-.footerLogo{
-  text-align: center !important;
-  max-width: 90vw !important;
-}
-.item1{
-  
-  grid-row-start: 1;
-  grid-column:  1 / -1;
-}
-.item2{
-  grid-row-start: 2;
-  grid-column: 1/-1;
-}
-.item3{
-  
-  grid-row-start: 3  !important;
-  grid-column: 1/-1;
-  /* grid-row: span 2; */
-}
+  .grid-item-4 {
+    grid-row-start: 4;
+    grid-column: 1/-1;
+  }
+  .grid-item-5 {
+    grid-row-start: 5;
+    grid-column: 1/-1;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(190px, auto);
+  }
+  .item1 {
+    grid-column: 1 /-1;
+    grid-row-start: 1;
+  }
+  .item2 {
+    grid-column: span 1;
+  }
+  .item3 {
+    grid-column: span 1;
+  }
 
-.item4{
-  
-  grid-row-start: 4;
-  grid-column: 1/-1;
-}
-.item5{
-  
-  grid-row-start: 5;
-  grid-column: 1/-1;
-}
+  .item4 {
+    grid-column: span 1;
+  }
+  .item5 {
+    grid-column: span 1;
+  }
+  .item6 {
+    grid-row-start: 4;
+    grid-column: 1/-1;
+  }
+
+  .textposition {
+    text-align: left;
+    margin: 66px 56px;
+  }
+  .footerAboutText {
+    margin: 50px 4em !important;
+    text-align: left;
+  }
   .alu {
-    position:unset;
+    position: unset;
     padding-left: 0rem;
     margin-top: 0rem;
   }
@@ -1908,6 +2249,11 @@ p {
     height: 120px;
     max-width: 350px;
   }
+  .onethrtitle {
+    display: grid;
+    height: 120px;
+    max-width: 350px;
+  }
   .lineGrey {
     position: absolute;
     margin-left: 5rem;
@@ -1934,7 +2280,7 @@ p {
   .thrtitleNoneBackg {
     display: grid;
     height: 120px;
-    max-width: 350px;
+    width: 100%;
   }
   .fiveMaint {
     margin-top: 15px;

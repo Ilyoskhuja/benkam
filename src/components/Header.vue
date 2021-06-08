@@ -19,7 +19,7 @@
       v-bind:class="{ show: show }"
       
     >
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto" style="margin-left:10%">
         <li class="nav-item active">
           <a class="nav-link navLink" href="#"
             >О компании <span class="sr-only">(current)</span></a
