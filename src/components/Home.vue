@@ -33,26 +33,26 @@
       </a-col>
     </a-row>
     <a-row class="sectwo">
-        <div class="parttwo">
-          <div class="img2">
-            <div class="thrtitleNoneBackg2"></div>
-            <div class="t34">
-              <span class="whiteLine"></span>
-              <div style="margin-top: auto; margin-bottom: 5.3rem">
-                <span class="miniTitle" style="color: white">02.</span>
-                <p class="sectwoInfo">BENKAM ALU EXTRUSIONS ®</p>
-              </div>
+      <div class="parttwo">
+        <div class="img2">
+          <div class="thrtitleNoneBackg2"></div>
+          <div class="t34">
+            <span class="whiteLine"></span>
+            <div style="margin-top: auto; margin-bottom: 5.3rem">
+              <span class="miniTitle" style="color: white">02.</span>
+              <p class="sectwoInfo">BENKAM ALU EXTRUSIONS ®</p>
             </div>
-            <img src="../assets/img/2.jpg" />
           </div>
-          <div class="greenInfo">
-            <span>BENKAM ALU EXTRUSIONS ®</span>
-            <p class="mt-5">
-              Молодое, стремительно развивающееся предприятие, специализируется
-              на производстве алюминиевого профиля различных типов и размеров.
-            </p>
-          </div>
+          <img src="../assets/img/2.jpg" />
         </div>
+        <div class="greenInfo">
+          <span>BENKAM ALU EXTRUSIONS ®</span>
+          <p class="mt-5">
+            Молодое, стремительно развивающееся предприятие, специализируется на
+            производстве алюминиевого профиля различных типов и размеров.
+          </p>
+        </div>
+      </div>
     </a-row>
     <a-row>
       <div class="gridThird">
@@ -73,8 +73,8 @@
           <div class="t342">
             <span class="miniTitleth">28</span>
           </div>
-          <span>тысяч тонн в год</span>
-          <span>Производительность собственной линии анодирования.</span>
+          <h1 class="secthCountYear">тысяч тонн в год</h1>
+          <h2 class="secthCountYearMini">Производительность собственной линии анодирования.</h2>
         </div>
         <div class="gridth-item3"></div>
         <div class="gridth-item4"></div>
@@ -149,12 +149,11 @@
       </a-col> -->
     </a-row>
     <a-row>
-     <div class="gridFour">
-       <div class="gridf-item1">1</div>
-       <div class="gridf-item2">2</div>
-       <div class="gridf-item3">3</div>
-     
-     </div>
+      <div class="gridFour">
+        <div class="gridf-item1">1</div>
+        <div class="gridf-item2">2</div>
+        <div class="gridf-item3">3</div>
+      </div>
     </a-row>
     <!-- <a-row type="flex">
       <a-col :span="24">
@@ -279,17 +278,17 @@
       </a-col>
     </a-row>
     <a-row>
-        <div class="sec6Img">
-          <img width="100%" height="auto" src="../assets/img/6.png" />
-        </div>
-        <div class="sec6Box">
-          <h1 class="sec6Title">Инновационность</h1>
-          <h6 class="sec6Info">
-            Непрерывное внедрение новшеств, обеспечивающих повышение
-            эффективности процессов производства, и <br />
-            улучшения качества продукции, востребованное рынком.
-          </h6>
-        </div>
+      <div class="sec6Img">
+        <img width="100%" height="auto" src="../assets/img/6.png" />
+      </div>
+      <div class="sec6Box">
+        <h1 class="sec6Title">Инновационность</h1>
+        <h6 class="sec6Info">
+          Непрерывное внедрение новшеств, обеспечивающих повышение эффективности
+          процессов производства, и <br />
+          улучшения качества продукции, востребованное рынком.
+        </h6>
+      </div>
     </a-row>
 
     <a-row class="mt-5" type="flex">
@@ -402,6 +401,41 @@
           </div>
         </a-carousel>
       </a-col>
+    </a-row>
+    <a-row>
+      <div class="bigGrid">
+        <div class="big-item1"></div>
+        <div class="big-item2"></div>
+        <div class="big-item3"></div>
+        <div class="big-item4"></div>
+        <div class="big-item5"></div>
+        <div class="big-item6"></div>
+        <div class="big-item7"></div>
+        <div class="big-item8"></div>
+        <div class="big-item9"></div>
+        <div class="big-item10"></div>
+
+        <div class="big-item11"></div>
+
+        <div class="big-item12"></div>
+
+        <div class="big-item13"></div>
+
+        <div class="big-item14"></div>
+
+        <div class="big-item15"></div>
+        <div class="big-item16"></div>
+
+        <div class="big-item17"></div>
+      </div>
+    </a-row>
+    <a-row>
+      <div class="middleGrid">
+        <div class="middle-item1"></div>
+        <div class="middle-item2"></div>
+        <div class="middle-item3"></div>
+        <div class="middle-item4"></div>
+      </div>
     </a-row>
     <a-row>
       <a-col :span="24" class="geoBox">
@@ -772,20 +806,152 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped >
-.gridFour{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-      grid-auto-rows: minmax(680px, auto);
- }
+.secthCountYear{
+width: 320px;
+height: 64px;
+font-family: Styrene A LC;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 32px;
+/* or 100% */
+
+letter-spacing: 0.015em;
+
+/* Light */
+
+color: #FFFFFF;
+}
+.secthCountYearMini{
+  /* position: absolute; */
+width: 320px;
+height: 96px;
+/* left: 880px;
+top: 368px; */
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 24px;
+/* or 200% */
+
+letter-spacing: 0.25em;
+
+/* Light */
+
+color: #FFFFFF;
+}
+.middleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(400px, auto);
+}
+.middle-item1 {
+  grid-row: span 3;
+}
+.middle-item2 {
+  background: #e3f5e3;
+}
+.middle-item3 {
+  background: #f5eae3;
+}
+.middle-item4 {
+  background: #f2f2f2;
+}
+.bigGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(680px, auto);
+}
+.big-item1 {
+  grid-row: span 2;
+  background: #d8f4da;
+}
+.big-item2 {
+  background: #ededed;
+  opacity: 0.16;
+}
+.big-item3 {
+  background: url("../assets/img/carmanu.png");
+  background-size: 100% 100%;
+}
+.big-item4 {
+  background: url("../assets/img/build.png");
+  background-size: 100% 100%;
+}
+.big-item5 {
+  background: #f0f282;
+  opacity: 0.16;
+}
+.big-item6 {
+  background: #b1ccf4;
+  opacity: 0.16;
+}
+.big-item7 {
+  background: url("../assets/img/roofb.png");
+  background-size: 100% 100%;
+}
+
+.big-item8 {
+  background: url("../assets/img/manufacc.png");
+  background-size: 100% 100%;
+}
+.big-item9 {
+  background: url("../assets/img/room.png");
+  background-size: 100% 100%;
+}
+
+.big-item10 {
+  background: #ededed;
+  opacity: 0.16;
+}
+.big-item11 {
+  background: #84f282;
+  opacity: 0.16;
+}
+
+.big-item12 {
+  background: #51b4ca;
+  opacity: 0.16;
+}
+.big-item13 {
+  background: url("../assets/img/alum.png");
+  background-size: 100% 100%;
+}
+.big-item14 {
+  background: url("../assets/img/elect.png");
+  background-size: 100% 100%;
+}
+
+.big-item15 {
+  background: url("../assets/img/table.png");
+  background-size: 100% 100%;
+}
+
+.big-item16 {
+  background: #e7e7e7;
+  opacity: 0.16;
+}
+
+.big-item17 {
+  background: #f2b182;
+  opacity: 0.16;
+}
+.gridFour {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(680px, auto);
+}
 .gridf-item1 {
   grid-row: span 2;
-  background:#F8F8F8 ;
+  background: #f8f8f8;
 }
 .gridf-item2 {
-  background: #D8F4DA;
+  background: #d8f4da;
 }
 .gridf-item3 {
-  background:#F0F4F7;
+  background: #f0f4f7;
 }
 
 .gridThird {
@@ -819,7 +985,6 @@ export default {
   text-align: center;
 }
 .miniTitleth {
-  position: absolute;
   font-family: Styrene A LC;
   font-style: normal;
   font-weight: normal;
@@ -827,11 +992,12 @@ export default {
   line-height: 64px;
   /* identical to box height, or 114% */
 
-  text-align: right;
   letter-spacing: 0.015em;
 
   /* Light */
-
+  position: absolute;
+  bottom: 0;
+  right: 0;
   color: #ffffff;
 }
 .onTopTitle {
@@ -1318,19 +1484,16 @@ ul {
   margin-top: 15rem;
 }
 .thBackg2 {
-  /* display: flex;
-  justify-content: flex-start; */
   width: 320px;
   height: 240px;
-  /* left: 0px; */
+  position: absolute;
   background: #f2f2f2;
   opacity: 0.08;
 }
 .t342 {
-
   width: 320px;
   height: 240px;
-  position: absolute;
+  position: relative;
 }
 .thrtitleNoneBackg2 {
   display: flex;
@@ -1704,7 +1867,7 @@ ul {
   width: 40vw;
   z-index: 1;
 }
-.sec6Img{
+.sec6Img {
   position: absolute;
   width: 100%;
 }
