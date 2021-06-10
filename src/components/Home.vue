@@ -43,7 +43,7 @@
               <p class="sectwoInfo">BENKAM ALU EXTRUSIONS ®</p>
             </div>
           </div>
-          <img src="../assets/img/2.jpg" />
+          <!-- <img src="../assets/img/2.jpg" /> -->
         </div>
         <div class="greenInfo">
           <span>BENKAM ALU EXTRUSIONS ®</span>
@@ -60,9 +60,9 @@
           <div class="thrtitleNoneBackg">
             <span
               class="lineGrey"
-              style="margin-top: 2.7rem; margin-bottom: auto"
+              style="margin-top: 15.7rem; margin-bottom: auto"
             ></span>
-            <div style="margin-top: 2.1rem; margin-bottom: auto">
+            <div style="margin-top: 15.1rem; margin-bottom: auto">
               <span class="miniTitle">03.</span>
               <p class="seconeInfo">Производственная мощность</p>
             </div>
@@ -74,11 +74,38 @@
             <span class="miniTitleth">28</span>
           </div>
           <h1 class="secthCountYear">тысяч тонн в год</h1>
-          <h2 class="secthCountYearMini">Производительность собственной линии анодирования.</h2>
+          <h2 class="secthCountYearMini">
+            Производительность собственной линии анодирования.
+          </h2>
         </div>
-        <div class="gridth-item3"></div>
-        <div class="gridth-item4"></div>
-        <div class="gridth-item5"></div>
+        <div class="gridth-item3">
+          <div class="thBackg2" style="opacity: 1"></div>
+          <div class="t342">
+            <span class="miniTitleth" style="color: black">36</span>
+          </div>
+          <h1 class="secthCountYear" style="color: black">тысяч тонн в год</h1>
+          <h2 class="secthCountYearMini" style="color: black">
+            Производительная мошность изготовления профиля.
+          </h2>
+        </div>
+        <div class="gridth-item4">
+          <div class="thBackg2" style="opacity: 1"></div>
+          <div class="t342">
+            <span class="miniTitleth" style="color: black">3</span>
+          </div>
+          <h1 class="secthCountYear" style="color: black">новейших пресса</h1>
+          <h2 class="secthCountYearMini" style="color: black">
+            Возможности изготовления профиля до 279.5мм в диаметре.
+          </h2>
+        </div>
+        <div class="gridth-item5">
+          <div class="thBackg2"></div>
+          <div class="t342">
+            <span class="miniTitleth">1 000</span>
+          </div>
+          <h1 class="secthCountYear">тонн</h1>
+          <h2 class="secthCountYearMini">Складской запас готовой продукции.</h2>
+        </div>
         <div class="gridth-item6"></div>
       </div>
       <!-- <a-col
@@ -150,9 +177,47 @@
     </a-row>
     <a-row>
       <div class="gridFour">
-        <div class="gridf-item1">1</div>
-        <div class="gridf-item2">2</div>
-        <div class="gridf-item3">3</div>
+        <div class="gridf-item1">
+          <div class="thrtitleNoneBackg2" style="opacity: 1"></div>
+          <div class="fourt34">
+            <span class="whiteLine" style="background: #424242"></span>
+            <div style="margin-top: auto; margin-bottom: 5.3rem">
+              <span class="miniTitle" style="color: black">04</span>
+              <p class="sectwoInfo" style="color: black">Коротко о нас</p>
+            </div>
+          </div>
+          <h1 class="fourInfo">
+            Benkam является крупнейшим производителем экструзионного алюминия в
+            Центральной Азии и занимает лидирующее место по поставке
+            алюминиевого профиля для различного назначения.
+          </h1>
+          <button class="detailButton">
+            <img
+              style="margin-right: 3rem; margin-left: 0px"
+              src="@/assets/img/detailButton.png"
+            />Подробнее
+          </button>
+        </div>
+        <div class="gridf-item2">
+          <div class="fourGI2box">
+            <h1 style="margin-top: 2.5rem">250</h1>
+            <h1 class="fourGI2">Более специалистов своего дела</h1>
+          </div>
+          <h2 class="fourGI2mini">На производстве занято</h2>
+        </div>
+        <div class="gridf-item3">
+          <div class="fourGI2box" style="margin-left: 290px">
+            <h1 style="margin-top: 2.5rem">3 000</h1>
+            <h1 class="fourGI2">Более тонн годовой продуции в месяц</h1>
+          </div>
+          <h2
+            class="fourGI2mini"
+            style="width: 320px; text-align: left; margin-left: 29.5rem"
+          >
+            Производственная мощность предприятия по выпуску алюминиевых
+            профилей
+          </h2>
+        </div>
       </div>
     </a-row>
     <!-- <a-row type="flex">
@@ -234,9 +299,16 @@
     </a-row> -->
     <a-row type="flex">
       <a-col :span="24">
-        <div class="thrtitleNoneBackg">
-          <span class="lineGrey"></span>
-          <span class="miniTitleMission">Миссия и видение</span>
+        <div
+          class="thrtitleNoneBackg2"
+          style="opacity: 1; background: #d8f4da"
+        ></div>
+        <div class="fourt34">
+          <span class="whiteLine" style="background: #424242"></span>
+          <div style="margin-top: auto; margin-bottom: 5.3rem">
+            <span class="miniTitle" style="color: black">05</span>
+            <p class="sectwoInfo" style="color: black">Миссия и видение</p>
+          </div>
         </div>
       </a-col>
       <a-col
@@ -257,12 +329,18 @@
         :md="{ span: 4, offset: 4 }"
         :lg="{ span: 4, offset: 2 }"
       >
-        <span class="line65"></span>
+        <!-- <span class="line65"></span> -->
         <h5 class="fiveMainc">
           Благодаря профессиональному и квалифицированному персоналу, а также
           высокотехнологичному оборудованию мы сможем воплотить самые сложные и
           инновационные проекты. Нам важен успех наших клиентов !
         </h5>
+        <button class="detailButton" style="margin-bottom: 15rem">
+          <img
+            style="margin-right: 3rem; margin-left: 0px"
+            src="@/assets/img/detailButton.png"
+          />Подробнее
+        </button>
       </a-col>
       <a-col
         :xs="{ span: 24 }"
@@ -270,27 +348,43 @@
         :md="{ span: 4, offset: 4 }"
         :lg="{ span: 4, offset: 2 }"
       >
-        <span class="line65"></span>
+        <!-- <span class="line65"></span> -->
         <h5 class="fiveMainc">
           Создание инновационных и комплексных решений, отвечающих потребностям
           рынка. Внедрение качественной продукции на рынок.
         </h5>
       </a-col>
     </a-row>
-    <a-row>
-      <div class="sec6Img">
-        <img width="100%" height="auto" src="../assets/img/6.png" />
+    <a-row class="secSix">
+      <div class="thrtitleNoneBackg2"></div>
+      <div class="t34" style="position: relative">
+        <span class="whiteLine"></span>
+        <div style="margin-top: auto; margin-bottom: 5.3rem">
+          <span class="miniTitle" style="color: white">06.</span>
+          <p class="sectwoInfo" style="text-align: left">
+            Выгодные преимещества и <br />
+            основные принципы <br />компании
+          </p>
+        </div>
       </div>
       <div class="sec6Box">
         <h1 class="sec6Title">Инновационность</h1>
         <h6 class="sec6Info">
-          Непрерывное внедрение новшеств, обеспечивающих повышение эффективности
-          процессов производства, и <br />
-          улучшения качества продукции, востребованное рынком.
+          Создание инновационных и комплексных решений, отвечающих
+          потребностям<br />
+          рынка. Внедрение качественной продукции на рынок.
         </h6>
       </div>
     </a-row>
-
+    <a-row>
+      <div class="successBack"></div>
+      <div style="display:flex;justify-content:center;">
+        <img style="margin-top:19vh; margin-right:80px" width="112px" height="83px" src="../assets/img/VectorUp.png">
+      <h1 class="success">Нам важен успех наших клиентов !</h1>
+      
+        <img style="margin-top:19vh; margin-left:90px" width="152px" height="112px" src="../assets/img/VectorDown.png">
+      </div>
+    </a-row>
     <a-row class="mt-5" type="flex">
       <a-col :span="24">
         <div class="thrtitleD8">
@@ -806,41 +900,135 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped >
-.secthCountYear{
-width: 320px;
-height: 64px;
-font-family: Styrene A LC;
-font-style: normal;
-font-weight: normal;
-font-size: 32px;
-line-height: 32px;
-/* or 100% */
-
-letter-spacing: 0.015em;
-
-/* Light */
-
-color: #FFFFFF;
+.secSix{
+   background: url("../assets/img/6.png");
+  background-size: 100% 100%;
+  height: 100vh;
 }
-.secthCountYearMini{
-  /* position: absolute; */
-width: 320px;
-height: 96px;
-/* left: 880px;
+.successBack{
+  z-index:-2; 
+  position: absolute;
+  background:#F0F0F0;
+  opacity: 0.5; 
+  width:100%; 
+  height:560px;
+}
+.success {
+  font-family: Styrene A LC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 96px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.05em;
+
+  color: #1c1c1c;
+  margin-top:19vh;
+
+}
+.fourGI2box {
+  display: flex;
+  margin-top: 152px;
+  margin-left: 320px;
+}
+.fourGI2 {
+  width: 220px;
+  height: 96px;
+  margin-left: 5rem;
+  font-family: Styrene A LC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+  text-align: left;
+  letter-spacing: 0.015em;
+
+  /* Benkam (text) */
+
+  color: #282828;
+}
+.fourGI2mini {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+
+  letter-spacing: 0.25em;
+
+  /* Darck_text */
+  margin-top: 10rem;
+  margin-left: 11rem;
+  color: #282828;
+}
+.detailButton {
+  width: 320px;
+  height: 128px;
+  margin-top: 10rem;
+  background: #f2f2f2;
+  padding: 0;
+  border: none;
+  /* background: none; */
+}
+
+.fourInfo {
+  width: 480px;
+  height: 240px;
+  font-family: Styrene A LC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
+  text-align: left;
+  letter-spacing: 0.015em;
+  margin-top: 15rem;
+  margin-left: 19rem;
+  /* Benkam (text) */
+
+  color: #282828;
+}
+.secthCountYear {
+  width: 180px;
+  height: 64px;
+  font-family: Styrene A LC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 32px;
+  /* or 100% */
+
+  letter-spacing: 0.015em;
+  margin-left: 20rem;
+  text-align: left;
+  /* Light */
+
+  color: #ffffff;
+}
+.secthCountYearMini {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  width: 320px;
+  height: 96px;
+  /* left: 880px;
 top: 368px; */
 
-font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 24px;
-/* or 200% */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+  text-align: left;
+  margin-left: 17rem;
+  letter-spacing: 0.25em;
 
-letter-spacing: 0.25em;
+  /* Light */
 
-/* Light */
-
-color: #FFFFFF;
+  color: #ffffff;
 }
 .middleGrid {
   display: grid;
@@ -1021,6 +1209,11 @@ color: #FFFFFF;
   margin-bottom: 5.8rem;
   margin-left: 7.3rem;
   background: #ffffff;
+}
+.sectwo{
+  background: url("../assets/img/2.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
 }
 .sectwoInfo {
   position: absolute;
@@ -1481,7 +1674,7 @@ ul {
   max-width: 560px;
   height: 280px;
   left: 0px;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
 }
 .thBackg2 {
   width: 320px;
@@ -1514,6 +1707,15 @@ ul {
   height: 280px;
   left: 0px;
   position: absolute;
+}
+
+.fourt34 {
+  display: flex;
+  justify-content: flex-start;
+  width: 560px;
+  height: 280px;
+  left: 0px;
+  position: relative;
 }
 .miniTitleone {
   font-family: Styrene A LC;
@@ -1567,7 +1769,7 @@ ul {
   background-color: #f7f7f7;
 }
 .img2 {
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
 }
 .img2 img {
   width: 100%;
@@ -1616,6 +1818,7 @@ ul {
   width: 641px;
   height: 688px;
   padding: 1rem;
+  margin-top: -10rem;
 }
 .greenInfo p {
   position: relative;
@@ -1808,7 +2011,7 @@ ul {
   text-align: left;
   font-family: Styrene A LC;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 40px;
   line-height: 48px;
   /* or 120% */
@@ -1829,7 +2032,7 @@ ul {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 40px;
   /* or 133% */
 
   letter-spacing: 0.015em;
@@ -1850,20 +2053,20 @@ ul {
   line-height: 24px;
   /* or 171% */
 
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-indent: 24px;
 
   /* Benkam (text) */
 
-  color: #282828;
+  color: #7c7c7c;
 }
 /**sec6 */
 
 .sec6Box {
-  position: absolute;
+  position: relative;
   text-align: left;
-  margin-top: 10rem;
-  margin-left: 10rem;
+  margin-top: -5rem;
+  margin-left: 40rem;
   width: 40vw;
   z-index: 1;
 }
@@ -1879,7 +2082,7 @@ ul {
   font-family: Styrene A LC;
   font-style: normal;
   font-weight: 500;
-  font-size: 96px;
+  font-size: 88px;
   line-height: 96px;
   /* identical to box height, or 100% */
 
@@ -1901,7 +2104,7 @@ ul {
   line-height: 24px;
   /* or 171% */
 
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 
   /* text (bottom) */
 
