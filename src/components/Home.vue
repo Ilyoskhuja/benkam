@@ -191,11 +191,11 @@
             Центральной Азии и занимает лидирующее место по поставке
             алюминиевого профиля для различного назначения.
           </h1>
-          <button class="detailButton">
-            <img
-              style="margin-right: 3rem; margin-left: 0px"
-              src="@/assets/img/detailButton.png"
-            />Подробнее
+          <button class="detailButton" style="margin-left:20rem">
+           <img
+                      style="margin-top: 3.5rem; margin-left: 3em; margin-right:5em"
+                      src="@/assets/img/detailButton.png"
+                    ><span style="margin-top:3.5rem">Подробнее</span>
           </button>
         </div>
         <div class="gridf-item2">
@@ -336,10 +336,10 @@
           инновационные проекты. Нам важен успех наших клиентов !
         </h5>
         <button class="detailButton" style="margin-bottom: 15rem">
-          <img
-            style="margin-right: 3rem; margin-left: 0px"
-            src="@/assets/img/detailButton.png"
-          />Подробнее
+        <img
+                      style="margin-top: 3.5rem; margin-left: 3em; margin-right:5em"
+                      src="@/assets/img/detailButton.png"
+                    ><span style="margin-top:3.5rem">Подробнее</span>
         </button>
       </a-col>
       <a-col
@@ -376,16 +376,25 @@
         </h6>
       </div>
     </a-row>
-    <a-row>
+    <a-row style="height: 560px">
       <div class="successBack"></div>
-      <div style="display:flex;justify-content:center;">
-        <img style="margin-top:19vh; margin-right:80px" width="112px" height="83px" src="../assets/img/VectorUp.png">
-      <h1 class="success">Нам важен успех наших клиентов !</h1>
-      
-        <img style="margin-top:19vh; margin-left:90px" width="152px" height="112px" src="../assets/img/VectorDown.png">
+
+      <div style="display: flex; justify-content: center">
+        <div style="margin-top: 19vh; margin-right: 80px">
+          <img width="112px" height="83px" src="../assets/img/VectorUp.png" />
+          <span class="darkLine"></span>
+        </div>
+        <h1 class="success">Нам важен успех наших клиентов !</h1>
+
+        <img
+          style="margin-top: 22vh; margin-left: 90px"
+          width="152px"
+          height="112px"
+          src="../assets/img/VectorDown.png"
+        />
       </div>
     </a-row>
-    <a-row class="mt-5" type="flex">
+    <!-- <a-row class="mt-5" type="flex">
       <a-col :span="24">
         <div class="thrtitleD8">
           <span class="lineGrey"></span>
@@ -418,14 +427,17 @@
           профилей
         </h5>
       </a-col>
-    </a-row>
+    </a-row> -->
     <a-row>
-      <a-col :span="24">
-        <div class="thrtitleNoneBackg">
-          <span class="lineGrey"></span>
-          <span class="miniTitle2">применение</span>
+      <div class="thrtitleNoneBackg2" style="opacity: 1"></div>
+      <div class="t34" style="position: relative">
+        <span class="whiteLine" style="background: black"></span>
+        <div style="margin-top: auto; margin-bottom: 5.3rem">
+          <span class="miniTitle">07.</span>
+          <p class="sectwoInfo" style="color: black">Наши услуги</p>
         </div>
-      </a-col>
+      </div>
+
       <a-col :span="24">
         <a-carousel :after-change="onChange">
           <div>
@@ -434,62 +446,106 @@
                 :xs="{ span: 24 }"
                 :sm="{ span: 24 }"
                 :md="{ span: 24 }"
-                :lg="{ span: 4, offset: 8 }"
+                :lg="{ span: 24 }"
               >
-                <h1 class="waterTitle">Анодирование</h1>
-                <h1 class="waterInfo">
-                  Для чего необходим <br />
-                  процесс анодирования?
-                </h1>
-                <p class="waterMore">Подробнее</p>
+                <h1 class="waterTitle">Экструзия</h1>
+                <h6 class="waterTitleInfo">
+                  Наши экструзионные линии могут производить профили до 7,5
+                  <br />метров в автоматическом режиме. Экструдируемый вес
+                  профилей <br />
+                  составляет от 50 гр до 15 кг на метр. Максимальный диаметр
+                  <br />
+                  экструдированного профиля 280 мм, а ширина 360 мм
+                </h6>
+                
+                  <button class="detailButton" style="margin-left:20rem">
+                    <img
+                      style="margin-top: 3.5rem; margin-left: 3em; margin-right:5em"
+                      src="@/assets/img/detailButton.png"
+                    ><span style="margin-top:-1rem">Подробнее</span>
+                  </button>
+               
                 <div class="waterImg">
-                  <img src="../assets/img/car.png" />
+                  <img width="100%" height="auto" src="../assets/img/benkammanu.png" />
                 </div>
-              </a-col>
-
-              <a-col
-                :xs="{ span: 24 }"
-                :sm="{ span: 24 }"
-                :md="{ span: 20, offset: 2 }"
-                :lg="{ span: 20, offset: 12 }"
-              >
-                <h1 class="waterUnderImg">
-                  Современные города невозможно представить без алюминия. Из
-                  него возводятся пешеходные, фасадные, оконные и раздвижные
-                  системы, опалубки и строительные леса.
-                </h1>
               </a-col>
             </a-row>
           </div>
           <div>
             <a-row>
-              <a-col
+             <a-col
                 :xs="{ span: 24 }"
                 :sm="{ span: 24 }"
                 :md="{ span: 24 }"
-                :lg="{ span: 4, offset: 8 }"
+                :lg="{ span: 24 }"
               >
                 <h1 class="waterTitle">Анодирование</h1>
-                <h1 class="waterInfo">
-                  Для чего необходим <br />
-                  процесс анодирования?
-                </h1>
-                <p class="waterMore">Подробнее</p>
+                <h6 class="waterTitleInfo">
+                 Анодировочные резервуары длиной 8 метров способны <br> наносить декоративный анодный слой 5-25 µm на <br> поверхность профилей длиной до 7,5 метров.
+                </h6>
+                
+                  <button class="detailButton" style="margin-left:20rem">
+                    <img
+                      style="margin-top: 3.5rem; margin-left: 3em; margin-right:5em"
+                      src="@/assets/img/detailButton.png"
+                    ><span style="margin-top:-1rem">Подробнее</span>
+                  </button>
+               
                 <div class="waterImg">
-                  <img src="../assets/img/man.png" />
+                  <img width="100%" height="auto" src="../assets/img/water2.png" />
                 </div>
               </a-col>
-              <a-col
+            </a-row>
+          </div>
+            <div>
+            <a-row>
+             <a-col
                 :xs="{ span: 24 }"
                 :sm="{ span: 24 }"
-                :md="{ span: 20, offset: 2 }"
-                :lg="{ span: 20, offset: 12 }"
+                :md="{ span: 24 }"
+                :lg="{ span: 24 }"
               >
-                <h1 class="waterUnderImg">
-                  Наши экструзионные линии могут производить профили до 7,5
-                  метров в автоматическом режиме. Экструдируемый вес профилей
-                  составляет от 50 до 15 кг на метр.
-                </h1>
+                <h1 class="waterTitle">Покраска</h1>
+                <h6 class="waterTitleInfo">
+                 Вертикальная линия порошкового покрытия от <br> итальянского производителя SAT без использования <br> хрома.
+                </h6>
+                
+                  <button class="detailButton" style="margin-left:20rem">
+                    <img
+                      style="margin-top: 3.5rem; margin-left: 3em; margin-right:5em"
+                      src="@/assets/img/detailButton.png"
+                    ><span style="margin-top:-1rem">Подробнее</span>
+                  </button>
+               
+                <div class="waterImg">
+                  <img width="100%" height="auto" src="../assets/img/material.png" />
+                </div>
+              </a-col>
+            </a-row>
+          </div>
+            <div>
+            <a-row>
+             <a-col
+                :xs="{ span: 24 }"
+                :sm="{ span: 24 }"
+                :md="{ span: 24 }"
+                :lg="{ span: 24 }"
+              >
+                <h1 class="waterTitleLast">Мы всегда рады предоставить Вам <br> полный комплекс алюминиевых <br> решений для вашего бизнеса.</h1>
+                <h6 class="waterTitleInfo">
+                 С помощью совмеменного ободуования и опытного <br> персонала, превосходного сервиса и услуги, мы <br> исполняем самые смелые желания и требования. 
+                </h6>
+                
+                  <button class="detailButton" style="margin-left:20rem">
+                    <img
+                      style="margin-top: 3.5rem; margin-left: 3em; margin-right:5em"
+                      src="@/assets/img/detailButton.png"
+                    ><span style="margin-top:-1rem">Подробнее</span>
+                  </button>
+               
+                <div class="waterImg">
+                  <img width="100%" height="auto" src="../assets/img/list.png" />
+                </div>
               </a-col>
             </a-row>
           </div>
@@ -900,18 +956,50 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped >
-.secSix{
-   background: url("../assets/img/6.png");
+@font-face {
+  font-family: "Styrene A LC";
+  src: url("~@/assets/font/StyreneALC-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+.darkLine {
+  position: absolute;
+  width: 112px;
+  height: 4px;
+  margin-top: 3.5rem;
+  margin-left: -8.5rem;
+  /* Darck_text */
+
+  background: #282828;
+}
+.waterTitleLast{
+  font-family: Styrene A LC;
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 80px;
+/* or 125% */
+
+letter-spacing: 0.015em;
+
+color: #1C1C1C;
+text-align: start;
+margin-left: 18rem;
+margin-top: 2rem;
+margin-bottom: 5rem;
+}
+.secSix {
+  background: url("../assets/img/6.png");
   background-size: 100% 100%;
   height: 100vh;
 }
-.successBack{
-  z-index:-2; 
+.successBack {
+  z-index: -2;
   position: absolute;
-  background:#F0F0F0;
-  opacity: 0.5; 
-  width:100%; 
-  height:560px;
+  background: #f0f0f0;
+  opacity: 0.5;
+  width: 100%;
+  height: 560px;
 }
 .success {
   font-family: Styrene A LC;
@@ -924,8 +1012,7 @@ export default {
   letter-spacing: 0.05em;
 
   color: #1c1c1c;
-  margin-top:19vh;
-
+  margin-top: 19vh;
 }
 .fourGI2box {
   display: flex;
@@ -968,9 +1055,12 @@ export default {
   width: 320px;
   height: 128px;
   margin-top: 10rem;
+  
   background: #f2f2f2;
   padding: 0;
   border: none;
+  display: flex;
+  justify-content: start;
   /* background: none; */
 }
 
@@ -1210,7 +1300,7 @@ top: 368px; */
   margin-left: 7.3rem;
   background: #ffffff;
 }
-.sectwo{
+.sectwo {
   background: url("../assets/img/2.jpg");
   background-size: 100% 100%;
   height: 100vh;
@@ -1951,11 +2041,27 @@ ul {
   font-size: 120px;
   line-height: 104px;
   /* identical to box height, or 87% */
-
+  text-align: start;
+  margin-left: 18rem;
   letter-spacing: 0.015em;
 
   /* Benkam (text) */
 
+  color: #282828;
+}
+.waterTitleInfo {
+  max-width: 560px;
+  height: 96px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  text-align: left;
+  letter-spacing: 0.1em;
+  margin-left: 18rem;
   color: #282828;
 }
 .waterMore {
@@ -1995,12 +2101,12 @@ ul {
   color: #656565;
 }
 .waterImg {
-  width: 100%;
-  height: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
-  padding-bottom: 5rem;
+  margin-left: 45vw;
+  margin-right: 0;
+  /* padding-bottom: 5rem; */
   z-index: -1;
 }
 /*********Section 5*****/
